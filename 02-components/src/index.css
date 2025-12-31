@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+}
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+
+.card{
+  background-color: rgb(206, 184, 227);
+  border-radius: 10PX;
+  margin: 20PX;
+  padding: 20px;
+}
+
+.nav {
+  background-color: aquamarine;
+  padding: 20px;
+  margin: 5px;
+}
