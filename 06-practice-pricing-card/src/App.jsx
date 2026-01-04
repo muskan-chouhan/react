@@ -44,7 +44,7 @@ function App() {
     duration: "month",
     features: ["25 Projects", "Advanced Analytics", "Priority Support"],
     buttonText: "Go Pro",
-    popular: true,
+    popular: false,
   },
   {
     id: 6,
