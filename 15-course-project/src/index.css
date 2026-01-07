@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f5f6f7;
+}
+
+/* Heading */
+.main {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Center area */
+.parent {
+  min-height: 100vh;
+  align-items: flex-start;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  width: 240px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  border: 2px solid #e5e7eb;
+}
+
+/* Title */
+.course-title {
+  font-size: 18px;
+  color: #1f2933;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+/* Label rows */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.label {
+  color: #6b7280;
+}
+
+.value {
+  color: #111827;
+  font-weight: 500;
+}
+
+/* Free badge */
+.free {
+  color: #16a34a;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #111827;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1f2933;
+}
