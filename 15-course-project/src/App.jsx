@@ -46,7 +46,7 @@ function App() {
 
        {coursesData.map(function(data,id){
         return <div key={id}>
-        <Card title={data.title} category={data.category} price={data.price} />
+        <Card title={data.title} category={data.category} price={data.price} isFree={data.isFree} />
        </div> 
       })}
         

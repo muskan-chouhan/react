@@ -1,25 +1,32 @@
-function Card({title,Category,price}){
-    return(
-              
-        <div className="card">
+function Card({ title, category, price, isFree }) {
+  return (
+    <div className="card">
 
-          <h2 className="course-title">{title}</h2>
+      <h2 className="course-title">{title}</h2>
 
-          <div className="info">
-            <span className="label">Category</span>
-            <span className="value">{Category}</span>
-          </div>
+      <div className="info">
+        <span className="label">Category</span>
+        <span className="value">{category}</span>
+      </div>
 
-          <div className="info">
+      <div className="info">
+        {isFree ? (
+          <>
             <span className="label">Price</span>
-            <span className="value free">{price}</span>
-          </div>
+            <span className="value free">Free</span>
+          </>
+        ) : (
+          <>
+            <span className="label">Price</span>
+            <span className="value">₹{price}</span>
+          </>
+        )}
+      </div>
 
-          <button className="btn">Add Course</button>
+      <button className="btn">Add Course</button>
 
-        </div>
-   
-    )
+    </div>
+  );
 }
 
-export default Card
+export default Card;
