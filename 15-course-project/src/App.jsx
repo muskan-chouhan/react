@@ -54,7 +54,6 @@ function App() {
     id: 6,
     title: "JavaScript Advanced",
     category: "Programming",
-",
     price: 0,
     isFree: true,
     isSelected: false,
