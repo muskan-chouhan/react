@@ -34,6 +34,31 @@ function App() {
     isFree: true,
     isSelected: false,
   },
+  {
+    id: 5,
+    title: "HTML & CSS Mastery",
+    category: "Web Design",
+    price: 0,
+    isFree: true,
+    isSelected: false,
+  },
+  {
+    id: 5,
+    title: "Git & GitHub",
+    category: "Tools",
+    price: 0,
+    isFree: true,
+    isSelected: false,
+  },
+  {
+    id: 6,
+    title: "JavaScript Advanced",
+    category: "Programming",
+",
+    price: 0,
+    isFree: true,
+    isSelected: false,
+  },
 ];
 
 

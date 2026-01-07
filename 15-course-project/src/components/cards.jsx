@@ -1,4 +1,13 @@
+import { useState } from "react";
+
 function Card({ title, category, price, isFree }) {
+
+
+
+  const [course, setCourse] = useState("Add Course")
+  const select = () => {
+    setCourse ("Added")
+  }
   return (
     <div className="card">
 
@@ -23,7 +32,7 @@ function Card({ title, category, price, isFree }) {
         )}
       </div>
 
-      <button className="btn">Add Course</button>
+      <button className="btn" onClick={select}>{course}</button>
 
     </div>
   );
