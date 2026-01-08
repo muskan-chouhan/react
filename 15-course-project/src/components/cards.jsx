@@ -33,9 +33,13 @@ function Card({ title, category, price, isFree }) {
         )}
       </div>
 
-      <button className="btn" onClick={select}>
-        {isSelected ? "Remove" : "Add Course"}
-      </button>
+<button
+  className={`btn ${isSelected ? "remove" : "add"}`}
+  onClick={select}
+>
+  {isSelected ? "Remove" : "Add Course"}
+</button>
+
 
     </div>
   );
