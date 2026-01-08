@@ -2,15 +2,13 @@ import { useState } from "react";
 
 function Card({ title, category, price, isFree }) {
 
-const [course, setCourse] = useState("Add Course");
+  // sirf haan / naa
+  const [isSelected, setIsSelected] = useState(false);
 
-const select = () => {
-  if (course === "Add Course") {
-    setCourse("Remove");
-  } else {
-    setCourse("Add Course");
-  }
-};
+  const select = () => {
+    setIsSelected(!isSelected);
+  };
+
   return (
     <div className="card">
 
@@ -35,8 +33,9 @@ const select = () => {
         )}
       </div>
 
-      <button className="btn" onClick={select}>{course}</button>
- {/* <button className="btn" onClick={select}>Add course</button> */}
+      <button className="btn" onClick={select}>
+        {isSelected ? "Remove" : "Add Course"}
+      </button>
 
     </div>
   );
