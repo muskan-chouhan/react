@@ -61,6 +61,7 @@ function App() {
 ];
 
 
+
   return (
     
     <>
@@ -70,7 +71,7 @@ function App() {
 
        {coursesData.map(function(data,id){
         return <div key={id}>
-        <Card title={data.title} category={data.category} price={data.price} isFree={data.isFree} />
+        <Card title={data.title} category={data.category} price={data.price} isFree={data.isFree}   isSelected={data.isSelected}/>
        </div> 
       })}
         

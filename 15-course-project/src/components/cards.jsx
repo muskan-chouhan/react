@@ -1,13 +1,12 @@
 import { useState } from "react";
 
 function Card({ title, category, price, isFree }) {
+  const [isSelected, setIsSelected] = useState(false);
 
+  const handleClick = () => {
+    setIsSelected(!isSelected);
+  };
 
-
-  const [course, setCourse] = useState("Add Course")
-  const select = () => {
-    setCourse ("Added")
-  }
   return (
     <div className="card">
 
@@ -32,7 +31,12 @@ function Card({ title, category, price, isFree }) {
         )}
       </div>
 
-      <button className="btn" onClick={select}>{course}</button>
+      <button
+        className={`btn ${isSelected ? "remove" : ""}`}
+        onClick={handleClick}
+      >
+        {isSelected ? "Remove" : "Add Course"}
+      </button>
 
     </div>
   );
