@@ -1,9 +1,6 @@
 import StudentForm from "./component/StudentForm"
 import StudentCard from "./component/StudentCard"
 
-
-
-
 function App() {
   return (
     <>
@@ -17,5 +14,4 @@ function App() {
     </>
   )
 }
-
 export default App
