@@ -1,10 +1,15 @@
 import { useState } from "react";
 
 
-function StudentForm() {
-  const [name, setName] = useState('')
-  const [course, setCourse] = useState('')
-  const [age, setAge] = useState('')
+function StudentForm({ onAddStudent }) {
+  const [name, setName] = useState("");
+  const [course, setCourse] = useState("");
+  const [age, setAge] = useState("");
+
+
+  function handleClick() {
+    onAddStudent(name, course, age);
+  }
 
   return (
     <>
@@ -14,7 +19,7 @@ function StudentForm() {
           <input type="text" placeholder="Enter Course" value = {course} onChange={(event)=>setCourse(event.target.value)}/>
           <input type="number" placeholder="Enter Age" value = {age}  onChange={(event)=>setAge(event.target.value)} />
 
-          <button type="button" className="btn"> Add Student</button>
+          <button onClick={handleClick}>Add Student</button>
         </form>
       </div>
     </>
