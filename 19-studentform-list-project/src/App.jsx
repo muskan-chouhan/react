@@ -2,6 +2,7 @@ import StudentForm from "./component/StudentForm"
 import StudentCard from "./component/StudentCard"
 
 function App() {
+
   function addStudent(name, course, age) {
     console.log(name, course, age); // yahin data aa gaya
   }
@@ -9,7 +10,7 @@ function App() {
     <>
       <h1 className="title">Student Form</h1>
 
-      <StudentForm addStudent={addStudent} />
+      <StudentForm onAddStudent={addStudent} />
 
        <div className="student-list">
         <StudentCard/> 

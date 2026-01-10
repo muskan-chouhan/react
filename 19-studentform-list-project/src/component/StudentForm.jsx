@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-function StudentForm({addStudent}) {
+function StudentForm({onAddStudent}) {
   const [name, setName] = useState("");
   const [course, setCourse] = useState("");
   const [age, setAge] = useState("");
 
 
    function handleClick(){
-      addStudent(name, course, age);
+      onAddStudent(name, course, age);
    }
 
   return (
