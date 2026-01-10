@@ -1,15 +1,14 @@
 import { useState } from "react";
 
-
-function StudentForm({ onAddStudent }) {
+function StudentForm({addStudent}) {
   const [name, setName] = useState("");
   const [course, setCourse] = useState("");
   const [age, setAge] = useState("");
 
 
-  function handleClick() {
-    onAddStudent(name, course, age);
-  }
+   function handleClick(){
+      addStudent(name, course, age);
+   }
 
   return (
     <>
@@ -24,6 +23,6 @@ function StudentForm({ onAddStudent }) {
       </div>
     </>
   )
-}
 
+}
 export default StudentForm;
