@@ -8,6 +8,11 @@ function StudentForm({onAddStudent}) {
 
    function handleClick(){
       onAddStudent(name, course, age);
+
+      
+  setName("");
+  setCourse("");
+  setAge("");
    }
 
   return (
