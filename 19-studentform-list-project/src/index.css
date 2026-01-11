@@ -105,6 +105,10 @@ body {
 .value.adult {
   color: #16a34a;
 }
+.value.minor {
+  color: #a32216;
+}
+
 
 .select-btn {
   margin-top: 12px;
