@@ -4,7 +4,7 @@ import { useState } from "react"
 
 function App() {
   const [students, setStudents] = useState([]);
-    function addStudent(name, course, age) {
+  function addStudent(name, course, age) {
     const newStudent = {
       name: name,
       course: course,
@@ -14,7 +14,7 @@ function App() {
     setStudents([...students, newStudent]);
   }
 
-    return (
+  return (
     <>
       <h1 className="title">Student Form</h1>
 

@@ -13,9 +13,9 @@ function StudentCard(props) {
 
                 <p className="student-info">
                     {props.age >= 18 ? (
-                        <span className="value adult">Adult</span>
+                        <span className="value adult">Adult :{props.age}</span>
                     ) : (
-                        <span className="value minor">Minor</span>
+                        <span className="value minor">Minor :{props.age}</span>
                     )}
                 </p>
 
