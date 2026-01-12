@@ -1,8 +1,10 @@
+import { useState } from "react"
 function StudentCard(props) {
+
     return (
+    
         <>
-
-
+        
             <div className="student-card">
                 <h3 className="student-name">{props.name}</h3>
 
