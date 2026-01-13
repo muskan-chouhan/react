@@ -4,6 +4,7 @@ import { useState } from "react"
 
 function App() {
   const [students, setStudents] = useState([]);
+
   function addStudent(name, course, age) {
     const newStudent = {
       name: name,
