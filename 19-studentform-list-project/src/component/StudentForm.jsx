@@ -4,13 +4,20 @@ function StudentForm({ onAddStudent }) {
   const [name, setName] = useState("");
   const [course, setCourse] = useState("");
   const [age, setAge] = useState("");
-
+  const [error, setError] = useState("");
 
   function handleClick() {
-    onAddStudent(name, course, age);
+    if(name && course && age){
+            onAddStudent(name, course, age);
     setName("");
     setCourse("");
     setAge("");
+    setError("")
+    
+  }else{
+setError('Please fill all fields')
+
+    }
   }
 
   return (
@@ -23,6 +30,8 @@ function StudentForm({ onAddStudent }) {
           <button type="button" onClick={handleClick}>
             Add Student
           </button>
+            {error && <p className="error-text">{error}</p>}
+
         </form>
 
       </div>
