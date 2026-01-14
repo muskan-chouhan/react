@@ -27,6 +27,10 @@ function StudentCard(props) {
       <button className="select-btn" onClick={control}>
         {selected ? "Remove" : "Select"}
       </button>
+<button className="delete-btn" onClick={props.onDelete}>
+  Delete
+</button>
+      
     </div>
   );
 }

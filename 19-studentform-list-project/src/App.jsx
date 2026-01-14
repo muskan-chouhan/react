@@ -13,6 +13,10 @@ function App() {
     };
     setStudents([...students, newStudent]);
   }
+function deleteStudent(deleteIndex) {
+  const newStudents = students.filter((_, index) => index !== deleteIndex);
+  setStudents(newStudents);
+}
 
   return (
     <>
@@ -27,6 +31,8 @@ function App() {
             name={student.name}
             course={student.course}
             age={student.age}
+            onDelete={() => deleteStudent(index)}
+
           />
         ))}
       </div>
