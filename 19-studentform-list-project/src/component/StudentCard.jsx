@@ -3,9 +3,7 @@ import { useState } from "react";
 function StudentCard(props) {
   const [selected, setSelected] = useState(false);
 
-  function control() {
-    setSelected(!selected);
-  }
+ 
 
   return (
     <div className="student-card">
@@ -24,12 +22,19 @@ function StudentCard(props) {
         )}
       </p>
 
-      <button className="select-btn" onClick={control}>
-        {selected ? "Remove" : "Select"}
-      </button>
-<button className="delete-btn" onClick={props.onDelete}>
-  Delete
+<button
+  className="select-btn"
+  onClick={() => {
+    if (!selected) {
+      setSelected(true);       // pehle select karo
+    } else {
+      props.onDelete();        // phir delete karo
+    }
+  }}
+>
+  {selected ? "Remove" : "Select"}
 </button>
+
       
     </div>
   );
