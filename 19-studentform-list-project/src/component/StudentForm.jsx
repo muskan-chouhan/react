@@ -7,15 +7,16 @@ function StudentForm({ onAddStudent }) {
   const [error, setError] = useState("");
 
   function handleClick() {
-    if(name && course && age){
-            onAddStudent(name, course, age);
-    setName("");
-    setCourse("");
-    setAge("");
-    setError("")
-    
-  }else{
-setError('Please fill all fields')
+    if (name && course && age) {
+       const ageNumber = Number(age);
+      onAddStudent(name, course, ageNumber);
+      setName("");
+      setCourse("");
+      setAge("");
+      setError("")
+
+    } else {
+      setError('Please fill all fields')
 
     }
   }
@@ -24,13 +25,46 @@ setError('Please fill all fields')
     <>
       <div className="form-container">
         <form className="student-form">
-          <input type="text" placeholder="Enter Name" value={name} onChange={(event) => setName(event.target.value)} />
-          <input type="text" placeholder="Enter Course" value={course} onChange={(event) => setCourse(event.target.value)} />
-          <input type="number" placeholder="Enter Age" value={age} onChange={(event) => setAge(event.target.value)} />
+          <input
+            type="text"
+            placeholder="Enter Name"
+            value={name}
+            onChange={(e) => {
+              const value = e.target.value;
+
+              if (/^[a-zA-Z ]*$/.test(value)) {
+                setName(value);
+              }
+            }}
+          />
+          <input
+            type="text"
+            placeholder="Enter Course"
+            value={course}
+            onChange={(e) => {
+              const value = e.target.value;
+
+              if (/^[a-zA-Z ]*$/.test(value)) {
+                setCourse(value);
+              }
+            }}
+          />
+
+          <input
+            type="number"
+            placeholder="Enter Age"
+            value={age}
+            onChange={(event) => {
+              const value = event.target.value
+              if (value > 0 || value == "") {
+                setAge(value)
+              }
+            }
+            } />
           <button type="button" onClick={handleClick}>
             Add Student
           </button>
-            {error && <p className="error-text">{error}</p>}
+          {error && <p className="error-text">{error}</p>}
 
         </form>
 
