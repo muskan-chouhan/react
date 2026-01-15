@@ -76,15 +76,7 @@ function App() {
       <br></br>
       <br></br>
       <br></br>
-
-
-
-
-
-
-
-
-      {/* domy data */}
+      <h2>dummy data</h2>
       <table border='1'>
         <thead>
           <tr>
