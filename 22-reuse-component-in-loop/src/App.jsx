@@ -1,0 +1,62 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import User from "./component/user"
+import './App.css'
+
+function App() {
+   const userData = [
+    {
+      name: 'henery Poter',
+      age: 24,
+      email: 'henery@gamil.com',
+      id: 6
+    },
+    {
+      name: 'Alex sen',
+      age: 22,
+      email: 'alex@gamil.com',
+      id: 5
+    },
+    {
+      name: 'Sem rim',
+      age: 17,
+      email: 'sem@gamil.com',
+      id: 4
+    },
+    {
+      name: 'John kav',
+      age: 25,
+      email: 'john@gamil.com',
+      id: 3
+    },
+    {
+      name: 'Kim belly',
+      age: 27,
+      email: 'kim@gamil.com',
+      id: 2
+    },
+    {
+      name: 'Dany okwd',
+      age: 28,
+      email: 'deny@gamil.com',
+      id: 1
+    }
+  ]
+
+  return (
+      userData.map((user) => (
+
+      <div key={user.id}>
+       
+          <User data={user}/>
+      </div>
+
+    ))
+
+
+        
+    
+  )
+}
+
+export default App
