@@ -1,16 +1,20 @@
 import { useState } from 'react'
-import Dropdown from './component/dropdown'
 import Clock from './component/clock'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [color, setColor] = useState('green')
 
   return (
     <>
-    <h2>Default Props in React Js</h2>
-    <Dropdown/>
+      <h2>Default Props in React Js</h2>
 
-    <Clock/>
+      <select onChange={(event) => setColor(event.target.value)}>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+      </select>
+
+      <Clock color={color} />
     </>
   )
 }
