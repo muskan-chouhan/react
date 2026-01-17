@@ -7,14 +7,27 @@ function App() {
   const [data, setData] = useState(0)
 
   useEffect(() => {
+    counterFunction()
+  }, [count])
 
-    callonce();
+  useEffect(() => {
+    callonce()
   }, [])
+
+
+
+  function counterFunction() {
+    console.log('counter Function', count);
+  }
+
+
 
   function callonce() {
     console.log('function once called');
 
   }
+
+
   return (
     <>
       <h1>UseEffect Hook</h1>
