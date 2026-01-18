@@ -5,11 +5,14 @@ function App() {
 
 
   useEffect(()=>{
-      repeat();  
+    setInterval(()=>{
+       const array = ["hello" , 'weclcom','leranreact']
+      setMsg(array[i])
+    },1000)
+      
   },[])
-  function repeat() {
-    setMsg("hello");
-  }
+
+ 
   
   return (
     <>
