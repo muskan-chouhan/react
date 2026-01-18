@@ -1,20 +1,28 @@
-import { useState } from 'react'
-
-
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [text, setText] = useState()
-   
+  const [status, setStatus] = useState("Offline");
+
+  function goOnline() {
+    setStatus("Online");
+  }
+
+  function goOffline() {
+    setStatus("Offline");
+  }
 
   return (
-    <>
-    <button onClick={(event)=>setText(event.target.value)}>Go Online</button>
-    <br></br>
-    <br></br>
-     <button>Go Offline</button>
-     <h2>{text}</h2>
-    </>
-  )
+    <div className="container">
+      <button onClick={goOnline}>Go Online</button>
+      <button onClick={goOffline}>Go Offline</button>
+
+      <div className="status">
+        <div className={status === "Online" ? "online" : "offline"}></div>
+        <h2>{status}</h2>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
