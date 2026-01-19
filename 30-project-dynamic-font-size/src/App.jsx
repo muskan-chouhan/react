@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Text from "./component/text";
 
 function App() {
   const [text, setText] = useState("Small");
@@ -11,18 +12,7 @@ function App() {
         <option value="Large">Large</option>
       </select>
 
-      <h1
-        style={{
-          fontSize:
-            text === "Large"
-              ? "24px"
-              : text === "Medium"
-              ? "16px"
-              : "12px",
-        }}
-      >
-        muskan
-      </h1>
+     <Text text = {text}/>
     </>
   );
 }
