@@ -1,22 +1,25 @@
 import { useState } from 'react'
 
 function App() {
-  const [text, setText] = useState('small')
+  const [text, setText] = useState('Small')
 
   return (
     <>
-      <select onChange={(event)=>setText(event.target.value)} defaultValue={'small'}>
-        <option value='small'>Small</option>
-        <option value='medium'>Medium</option>
-        <option value='large'>Large</option>
+      <select onChange={(event) => setText(event.target.value)}>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
       </select>
 
-         {
-      text == 'medium'?<h1 className='medium'>muskan medium</h1>
-      :text == 'large'?<h1 className='large'>muskan large</h1>
-      :<h1 className='small'>muskan small</h1>
-     
-    }
+      {
+        text === 'Small' && <h1 className="small">muskan</h1>
+      }
+      {
+        text === 'Medium' && <h1 className="medium">muskan</h1>
+      }
+      {
+        text === 'Large' && <h1 className="large">muskan</h1>
+      }
     </>
   )
 }
