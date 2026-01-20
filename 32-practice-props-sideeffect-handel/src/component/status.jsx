@@ -1,6 +1,6 @@
 const Status = ({status}) => {
 
-if(status){
+if(status == 'online'){
     console.log('user online');
 }else{
     console.log('user offline');
