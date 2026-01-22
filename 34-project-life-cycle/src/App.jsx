@@ -1,23 +1,29 @@
 import { useState } from 'react'
 import Profile from './component/profile'
 
-
 function App() {
 
-  const [setName, setUserName] = useState()
+  const [userName, setUserName] = useState("")
+  const [inputName, setInputName] = useState("")
 
   return (
     <>
+      <Profile userName={userName} />
 
-    <Profile setName ={setName}/>
-    <br></br>
+     <br></br><br></br>
 
-    <input type='name' placeholder='Enter Your Name' style={{marginLeft : "20px"}} onChange={(event)=>setUserName(event.target.value)}></input>
-    <br></br>
-    <button>Change User Name</button>
-   <button>Toggle</button>
+      <input
+        type="text"
+        placeholder="Enter Your Name"
+        value={inputName}
+        onChange={(e) => setInputName(e.target.value)}
+      />
 
-  
+      <br></br><br></br>
+
+      <button onClick={() => setUserName(inputName)}>
+        Change User Name
+      </button>
     </>
   )
 }
