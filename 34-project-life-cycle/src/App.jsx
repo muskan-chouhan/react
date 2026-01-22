@@ -3,16 +3,18 @@ import Profile from './component/profile'
 
 
 function App() {
-  const [setName, setUserName] = useState('rahul')
-  function handel(){
-    setUserName(raj)
-  }
+
+  const [setName, setUserName] = useState([])
+
   return (
     <>
+
     <Profile setName ={setName}/>
     <br></br>
+
+    <input type='name' placeholder='Enter Your Name' style={{marginLeft : "20px"}} onClick={(event)=>setUserName(event.target.value)}></input>
     <br></br>
-   <button onClick={handel}>Change User Name</button>
+    <button>Change User Name</button>
    <button>Toggle</button>
 
   
