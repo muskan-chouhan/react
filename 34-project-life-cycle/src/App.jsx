@@ -3,16 +3,19 @@ import Profile from './component/profile'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [setName, setUserName] = useState('rahul')
+  function handel(){
+    setUserName(raj)
+  }
   return (
     <>
-    <Profile/>
+    <Profile setName ={setName}/>
     <br></br>
     <br></br>
-   <button>Change User Name</button>
-  
+   <button onClick={handel}>Change User Name</button>
    <button>Toggle</button>
+
+  
     </>
   )
 }
