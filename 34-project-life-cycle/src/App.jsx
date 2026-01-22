@@ -5,7 +5,7 @@ function App() {
 
   const [userName, setUserName] = useState("")
   const [inputName, setInputName] = useState("")
-
+  const [display, setDisplay] = useState(true)
   return (
     <>
       <Profile userName={userName} />
@@ -24,6 +24,8 @@ function App() {
       <button onClick={() => setUserName(inputName)}>
         Change User Name
       </button>
+
+      <button onClick={() => setDisplay(!display)}>Toggle</button>
     </>
   )
 }
