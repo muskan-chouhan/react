@@ -1,4 +1,4 @@
-const Profile = ({setName}) => {
+const Profile = ({userName}) => {
 
 
   return (
@@ -21,7 +21,7 @@ const Profile = ({setName}) => {
         <div style={{
           padding: "10px"
         }}>
-          <h2>{setName}</h2>
+          <h2>{userName}</h2>
           <p>Software Devloper</p>
         </div>
       </div>

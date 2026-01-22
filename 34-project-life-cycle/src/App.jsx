@@ -4,7 +4,7 @@ import Profile from './component/profile'
 
 function App() {
 
-  const [setName, setUserName] = useState([])
+  const [setName, setUserName] = useState()
 
   return (
     <>
@@ -12,7 +12,7 @@ function App() {
     <Profile setName ={setName}/>
     <br></br>
 
-    <input type='name' placeholder='Enter Your Name' style={{marginLeft : "20px"}} onClick={(event)=>setUserName(event.target.value)}></input>
+    <input type='name' placeholder='Enter Your Name' style={{marginLeft : "20px"}} onChange={(event)=>setUserName(event.target.value)}></input>
     <br></br>
     <button>Change User Name</button>
    <button>Toggle</button>
