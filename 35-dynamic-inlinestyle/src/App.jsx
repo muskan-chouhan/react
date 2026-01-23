@@ -1,18 +1,21 @@
 import { useState } from 'react'
 
-
-
 function App() {
-  const cardStyle = {
+
+  const [cardStyle,setcardStyle] = useState({
     width: "200px",
     border: "1px solid #cccccc3b",
     boxShadow: "1px 2px 3px 0px #cccccc57",
     margin: '10px'
+  })
+  
+  const updateTheme = (theme,text) =>{
+     
   }
-
   return (
     <>
-      <h1 style={{ color: 'red' }}>Inline Style in react JS</h1>
+      <button onClick={()=>updateTheme('gray','red')}>Change Theme</button>
+      <button>Default Theme</button>
       <div style={{
         display: "flex",
         flexWrap: "wrap"
@@ -32,11 +35,6 @@ function App() {
             <p>Software Devloper</p>
           </div>
         </div>
-
-
-
-        
-
       </div>
     </>
   )
