@@ -9,8 +9,8 @@ function App() {
     margin: '10px'
   })
   
-  const updateTheme = (theme,text) =>{
-     
+  const updateTheme = (bgColor,textColor) =>{
+     setcardStyle({...cardStyle,backgroundColor : bgColor})
   }
   return (
     <>
@@ -29,7 +29,7 @@ function App() {
             src='https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z2lybHxlbnwwfHwwfHx8MA%3D%3D'></img>
 
           <div style={{
-            padding: "10px"
+            padding: "10px",
           }}>
             <h2>rosy reter</h2>
             <p>Software Devloper</p>
