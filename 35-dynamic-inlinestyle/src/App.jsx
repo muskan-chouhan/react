@@ -15,7 +15,8 @@ function App() {
   return (
     <>
       <button onClick={()=>updateTheme('gray','red')}>Change Theme</button>
-      <button>Default Theme</button>
+      <button onClick={()=>updateTheme('white','black')}>Default Theme</button>
+  
       <div style={{
         display: "flex",
         flexWrap: "wrap"
