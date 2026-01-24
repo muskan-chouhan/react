@@ -1,0 +1,25 @@
+.heading{
+    color:red;
+    text-align: center;
+}
+
+.img{
+    width: 200px;
+}
+
+.card{
+    width: 200px;
+    border: 1px solid #cccccc3b;
+    box-shadow: 1px 2px 3px 0px #cccccc57;
+    margin: 10px;
+  
+}
+
+.text-wrap{
+padding: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
