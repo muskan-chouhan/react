@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-   const [textColor, setTextColor] = useState()
+   const [textColor, setTextColor] = useState("black")
   const [cardStyle, setCardStyle] = useState({
 
      width: "200px",
