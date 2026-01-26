@@ -39,6 +39,10 @@ function App() {
     <Heading>hlw Heading 4</Heading>
     <Stylebtn>Login</Stylebtn>
     <Stylebtn>check</Stylebtn>
+    <Stylebtn>Edit</Stylebtn>
+    <Stylebtn>Delete</Stylebtn>
+    <Stylebtn>Add</Stylebtn>
+    <Stylebtn>Serach</Stylebtn>
     
 
     </>
