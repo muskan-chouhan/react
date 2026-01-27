@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-   
+       <h1>call parent component from child component</h1>
     </>
   )
 }
