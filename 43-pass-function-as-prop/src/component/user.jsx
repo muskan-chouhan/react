@@ -1,7 +1,8 @@
-const User = () => {
+const User = ({displayName}) => {
+const name = "anil";
 return(
     <>
-    <button>Display name</button>
+    <button onClick={()=>displayName('name')}>Display name</button>
     </>
 )
 }
