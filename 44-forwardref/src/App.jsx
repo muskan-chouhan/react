@@ -7,7 +7,7 @@ function App() {
   function updateInput (){
 inputRef.current.value = 200;
 inputRef.current.focus();
-
+inputRef.current.style.color = 'red';
   }
 
   return (
