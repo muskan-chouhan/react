@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      
+      <h1>UserFromSatatus Hook in recat js 19</h1>
+      <input type='text' placeholder='Enter Name'></input>
+      <br></br>
+      <br></br>
+      <input type='password' placeholder='Enter Password'></input>
+      <button>Submit</button>
     </>
   )
 }
