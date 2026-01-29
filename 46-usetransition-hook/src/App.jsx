@@ -2,9 +2,10 @@ import { useState } from 'react'
 
 function App() {
   const [pending, setPending] = useState(false)
-  function handel(){
-
-    setPending(true)
+const handel = async() => {
+  setPending(true)
+    await new Promise(res => setTimeout(res,2000)) 
+       setPending(false)
   } 
   return (
     <>
