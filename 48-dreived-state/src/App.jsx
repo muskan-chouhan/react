@@ -7,7 +7,7 @@ function App() {
  const  handeAddUsers = ()=>{
     setUsers([...users,user])
   }
-  console.log(users);
+  // console.log(users);
   
   return (
     <>
@@ -15,7 +15,11 @@ function App() {
 
      <input type="text" onChange={(event)=>setUser(event.target.value)}></input>
      <button onClick={handeAddUsers}>Add User</button>
-     <p>{setUsers}</p>
+     {
+      users.map((item,index)=>(
+        <h4 key={index}>{item}</h4>
+      ))
+     }
     </>
   )
 }
