@@ -4,11 +4,16 @@ import { useState } from 'react'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
+    function pureFun(x,y) {
+      return ('x+y')
+       }
 
   return (
     <>
      <h1>Pure componenet and impure component</h1>
+
+ 
     </>
   )
 }
