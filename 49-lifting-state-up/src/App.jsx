@@ -3,7 +3,7 @@ import AddUsers from './component/AddUsers'
 import DisplayUsers from './component/DisplayUsers'
 
 function App() {
-  const [user, setUser] = useState()
+
 
   return (
     <>
