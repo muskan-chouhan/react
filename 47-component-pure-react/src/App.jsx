@@ -14,9 +14,14 @@ function App() {
   )
 }
 
-const Counter = ({count}) => {
-  count = count + 1
-  return <h1>Counter {count}</h1>
+// const Counter = ({count}) => {
+//   count = count + 1
+//   return <h1>Counter {count}</h1>
+// }
+
+
+const cup = () => {
+  return<h1>we have {guest} guest  we have to make {guest} cup of tea</h1>
 }
 
 export default App
