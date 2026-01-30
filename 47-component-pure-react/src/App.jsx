@@ -1,23 +1,25 @@
 import { useState } from 'react'
-let data= 20;
+let count = 0;
 function App() {
-   
-  // impure component
-  let data = 40;
 
-  
-  // pure function
-  function pureFun(x, y) {
-    return ('x+y')
-  }
+
+
 
   return (
     <>
       <h1>Pure componenet and impure component</h1>
+      <Counter />
+      <Counter />
+      <Counter />
 
 
     </>
   )
+}
+
+const Counter = () => {
+  count = count + 1
+  return <h1>Counter {count}</h1>
 }
 
 export default App
