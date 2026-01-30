@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+let guest = 0;
 function App() {
 
   return (
@@ -21,6 +21,7 @@ function App() {
 
 
 const cup = () => {
+  guest = guest + 1;
   return<h1>we have {guest} guest  we have to make {guest} cup of tea</h1>
 }
 
