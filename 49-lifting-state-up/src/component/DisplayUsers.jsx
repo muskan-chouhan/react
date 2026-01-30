@@ -1,8 +1,7 @@
-const DisplayUsers = () =>{
+const DisplayUsers = ({user}) =>{
     return(
         <>
-       
-        <h3>Display Users</h3>
+        <h3>{user}</h3>
         </>
     )
 }

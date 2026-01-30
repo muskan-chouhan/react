@@ -3,13 +3,13 @@ import AddUsers from './component/AddUsers'
 import DisplayUsers from './component/DisplayUsers'
 
 function App() {
-
+    const [user, setUser] = useState()
 
   return (
     <>
     <h1 style={{textAlign : "center"}}>Lifting state up</h1>
-    <AddUsers/>
-    <DisplayUsers/>
+    <AddUsers setUser={setUser}/>
+    <DisplayUsers user= {user}/>
     
     </>
   )
