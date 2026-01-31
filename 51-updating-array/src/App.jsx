@@ -8,7 +8,7 @@ function App() {
     <>
     <h1 style={{textAlign:'center'}}>Updating Array in state</h1>
     <h2>{name}</h2>
-    <button>Updating Name</button>
+    <button onClick={()=>setName('muskan chouhan')}>Updating Name</button>
  
     </>
   )
