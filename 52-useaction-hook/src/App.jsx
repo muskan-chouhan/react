@@ -24,7 +24,9 @@ function App() {
           type='password' name='password' placeholder='enter password'
         />
         <br /><br />
-        <button disabled={pending}>submit data</button>
+        <button disabled={pending}>
+  {pending ? 'Submitting...' : 'Submit'}
+</button>
       </form>
     </> 
   )
