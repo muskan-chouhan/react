@@ -21,7 +21,7 @@ function App() {
         />
         <br /><br />
         <input
-          type='password' namse='password' placeholder='enter password'
+          type='password' name='password' placeholder='enter password'
         />
         <br /><br />
         <button>submit</button>
