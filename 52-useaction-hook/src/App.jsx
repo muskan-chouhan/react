@@ -7,9 +7,9 @@ async function handelSubmit(previousData, formData) {
   await new Promise(res => setTimeout(res, 2000))
   console.log('handelSubmit called', name, password);
   if(name && password){
-    return {message: 'data submitted'}
+    return {message: 'data submitted',name, password}
   }else{
-    return {error: 'Failed to submit,Enter data properly'}
+    return {error: 'Failed to submit,Enter data properly',name, password}
   }
 
 }
@@ -32,7 +32,9 @@ function App() {
         <button disabled={pending}>
           {pending ? 'Submitting...' : 'Submit'}
         </button>
-        <br/>
+
+      </form>
+         <br/>
         {
           data?.error && <span style={{color:'red'}}>{data?.error}</span>
           
@@ -41,8 +43,13 @@ function App() {
           data?.message && <span style={{color:'green'}}>{data?.message}</span>
           
         }
-      </form>
-      
+
+        {
+          <h2>name:{data?.name}</h2>
+        }    
+                {
+          <h2>password:{data?.password}</h2>
+        }    
       
     </>
   )
