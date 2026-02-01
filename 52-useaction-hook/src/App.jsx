@@ -24,9 +24,9 @@ function App() {
           type='password' name='password' placeholder='enter password'
         />
         <br /><br />
-        <button>submit</button>
+        <button disabled={pending}>submit data</button>
       </form>
-    </>
+    </> 
   )
 }
 
