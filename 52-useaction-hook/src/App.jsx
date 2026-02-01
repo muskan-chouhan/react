@@ -1,9 +1,13 @@
 import { useState } from 'react'
 import { useActionState } from 'react'
 
+function handelSubmit(){
+  console.log('handelSubmit called');
+  
+}
 
 function App() {
-  const [data, action, pending] = useActionState()
+  const [data, action, pending] = useActionState(handelSubmit,undefined)
 
   return (
     <>
