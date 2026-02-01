@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { useActionState } from 'react'
 
-function handelSubmit(){
-  console.log('handelSubmit called');
+function handelSubmit(previousData,formData){
+ let name = formData.get('name');
+  let password = formData.get('password');
+  console.log('handelSubmit called',name,password);
   
 }
 
@@ -18,7 +20,7 @@ function App() {
         />
         <br /><br />
         <input
-          type='password' name='password' placeholder='enter password'
+          type='password' namse='password' placeholder='enter password'
         />
         <br /><br />
         <button>submit</button>
