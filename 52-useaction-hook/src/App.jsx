@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { useActionState } from 'react'
 
-function handelSubmit(previousData,formData){
+async function handelSubmit  (previousData,formData){
  let name = formData.get('name');
   let password = formData.get('password');
+  await new  Promise(res=>setTimeout(res,2000))
   console.log('handelSubmit called',name,password);
   
 }
