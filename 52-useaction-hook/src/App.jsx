@@ -22,11 +22,11 @@ function App() {
       <h1 style={{ textAlign: "center" }}>UseAction Hook</h1>
       <form action={action}>
         <input
-          type='text' name='name' placeholder='enter name'
+          type='text' name='name' placeholder='enter name' defaultValue={data?.name}
         />
         <br /><br />
         <input
-          type='password' name='password' placeholder='enter password'
+          type='password' name='password' placeholder='enter password'defaultValue={data?.password}
         />
         <br /><br />
         <button disabled={pending}>
