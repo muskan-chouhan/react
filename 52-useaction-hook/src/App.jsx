@@ -2,11 +2,12 @@ import { useState } from 'react'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [data,action,pending] = useState()
 
   return (
     <>
     <h1 style={{textAlign:"center"}}>UseAction Hook</h1>
+    <form action={action}>
     <input 
       type='text'name='name'placeholder='enter name'
     />
@@ -16,7 +17,7 @@ function App() {
     />
     <br/><br/>
     <button>submit</button>
-
+</form>
     </>
   )
 }
