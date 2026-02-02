@@ -10,8 +10,9 @@ function App() {
     <h2>{password}</h2>
     <h2>{age}</h2>
     <h2>{skills}</h2> */}
-  <UserForm/>
-
+   <UserForm/>
+  <hr></hr>
+<UserForm/>
 
     </>
   )
