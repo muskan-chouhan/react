@@ -2,9 +2,8 @@ import { Fragment } from 'react'
 
 
 function App() {
-
-
   return (
+    // <> this is also called fragement
     <Fragment>
       <h1 style={{ textAlign: 'center' }}>Fragment in react js</h1>
       <Data />
@@ -20,11 +19,9 @@ function App() {
 export default App
 
 const Data = () => {
-  return (
-    <Fragment>
-      <h3>fragment in react js</h3>
-      <h3>fragment in react js</h3>
-    </Fragment>
+  return (<>
+     <span>hello</span><br>users</br>
+   </>
   )
 }
 
