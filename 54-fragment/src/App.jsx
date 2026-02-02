@@ -20,7 +20,7 @@ export default App
 
 const Data = () => {
   return (<>
-     <span>hello</span><br>users</br>
+     <span>hello</span><b>users</b>
    </>
   )
 }
