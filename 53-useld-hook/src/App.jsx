@@ -21,21 +21,21 @@ function App() {
 export default App
 
 const UserForm = () => {
-  const name = useId();
+  const user = useId();
   const password = useId();
   const term = useId();
   const skills = useId();
   return (
     <>
       <form action=''>
-        <label htmlFor={name}>Enter user name</label>
-        <input type='text' id={name} placeholder='enter name' /><br/><br/>
-        <label htmlFor={password}>Enter user password</label>
-        <input type='text' id={password} placeholder='enter password' /><br/><br/>
-        <label htmlFor={skills}>Enter user skills</label>
-        <input type='checkbox' id={skills} placeholder='enter skills' /><br/><br/>
-        <label htmlFor={term}>Enter term and condtion</label>
-        <input type='checkbox' id={term} placeholder='enter term' />
+        <label htmlFor={user+'name'}>Enter user name</label>
+        <input type='text' id={user+'name'} placeholder='enter name' /><br/><br/>
+        <label htmlFor={user + "password"}>Enter user password</label>
+        <input type='text' id={user+"password"} placeholder='enter password' /><br/><br/>
+        <label htmlFor={user + 'skills'}>Enter user skills</label>
+        <input type='checkbox' id={user + 'skills'} placeholder='enter skills' /><br/><br/>
+        <label htmlFor={user + 'term'}>Enter term and condtion</label>
+        <input type='checkbox' id={user + 'term'} placeholder='enter term' />
       </form>
     </>
   )
