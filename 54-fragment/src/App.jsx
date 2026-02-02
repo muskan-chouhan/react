@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <div>
+    <Fragment>
       <h1 style={{ textAlign: 'center' }}>Fragment in react js</h1>
       <Data />
       <Data />
@@ -13,7 +13,7 @@ function App() {
       <Data />
       <Data />
 
-    </div>
+    </Fragment>
   )
 }
 
@@ -21,10 +21,10 @@ export default App
 
 const Data = () => {
   return (
-    <div>
+    <Fragment>
       <h3>fragment</h3>
       <h3>fragment</h3>
-    </div>
+    </Fragment>
   )
 }
 
