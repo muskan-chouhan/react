@@ -1,12 +1,7 @@
 import { useState } from 'react'
+import useCounter from './useCounter'
 function App() {
-  const [count, setCount] = useState(0)
-  function increment(){
-    setCount(count+1)
-  }
-   function decrement(){
-    setCount(count-1)
-  }
+ const [count,increment,decrement] = useCounter()
   return (
     <>
      <h1>Custom hook practice</h1>
