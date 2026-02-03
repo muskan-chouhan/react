@@ -14,6 +14,11 @@ function App() {
       value?<h1>Custom Hooks IN React Js</h1>
       :null
      }
+     <hr></hr>
+     <button onClick={setdata}>Toggle Heading</button>
+     <button onClick={()=>setdata(false)}>Show Heading</button>
+     <button onClick={()=>setdata(true)}>Hide Heading</button> 
+    <h2>Heading 2</h2>
     </>
   )
 }
