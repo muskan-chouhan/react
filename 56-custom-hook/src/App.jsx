@@ -3,7 +3,7 @@ import useToggle from './useToggle'
 function App() {
   const[value,toggleValue] =useToggle(true)
   // console.log('val-----',value);
-  
+  const [data, setdata] = useToggle(true);
   return (
     <>
      

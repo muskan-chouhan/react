@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const useToggle = (defaultValue) => {
   const [value, setValue] = useState(defaultValue);
-  const [data, setdata] = useState(defaultValue);
+
   function toggleValue(val) {
     if (typeof val === "boolean") {
       setValue(! 
