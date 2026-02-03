@@ -1,4 +1,5 @@
 import Counter1 from "./counter1"
+import Counter2 from "./counter2"
 
 function App() {
 
@@ -6,6 +7,7 @@ function App() {
     <>
      <h1>Custom hook practice</h1>
      <Counter1/>
+     <Counter2/>
     </>
   )
 }
