@@ -8,17 +8,19 @@ function App() {
     <>
      
      <button onClick={toggleValue}>Toggle Heading</button>
-     <button onClick={()=>toggleValue(false)}>Show Heading</button>
-     <button onClick={()=>toggleValue(true)}>Hide Heading</button> 
+     <button onClick={()=>toggleValue(false)}>Hide Heading</button>
+     <button onClick={()=>toggleValue(true)}>Show Heading</button> 
      {
       value?<h1>Custom Hooks IN React Js</h1>
       :null
      }
      <hr></hr>
      <button onClick={setdata}>Toggle Heading</button>
-     <button onClick={()=>setdata(false)}>Show Heading</button>
-     <button onClick={()=>setdata(true)}>Hide Heading</button> 
-    <h2>Heading 2</h2>
+     <button onClick={()=>setdata(false)}>Hide Heading</button>
+     <button onClick={()=>setdata(true)}>Show Heading</button> 
+     {
+      data? <h2>Heading 2</h2>:null
+     }
     </>
   )
 }

@@ -1,15 +1,13 @@
 import { useState } from "react";
 
-const useToggle = (defaultValue) => {
+const useToggle = (defaultValue = false) => {
   const [value, setValue] = useState(defaultValue);
 
   function toggleValue(val) {
     if (typeof val === "boolean") {
-      setValue(! 
-         
-        value);      // show / hide
+      setValue(val);          // true / false direct set
     } else {
-      setValue(val);   // toggle
+      setValue(!value);       // sirf toggle
     }
   }
 
