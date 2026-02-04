@@ -8,6 +8,7 @@ function App() {
      <h1>Custom hook practice</h1>
      <Counter1/>
      <Counter2/>
+     <Counter2/>
     </>
   )
 }
