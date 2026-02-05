@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: rgb(243, 228, 243);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header,ul{
+  display: flex;
+  list-style-type: none;
+  width: 200px;
+  justify-content: space-around;
+}

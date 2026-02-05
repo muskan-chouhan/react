@@ -1,6 +1,7 @@
 import { Link } from "react-router"
+import './header.css'
 export default function NavBar() {
-    return (<div>
+    return (<div className="header">
         <div>
             <Link className="link"><h1>logo</h1></Link>
         </div>
