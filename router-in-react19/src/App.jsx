@@ -1,8 +1,15 @@
+import { Routes, Route, Link } from 'react-router';
+import Home from './home'
+import About from './about'
 function App() {
  
   return (
     <>
-    <h1>React Router 7 setup with  React 19</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+   
     </>
   )
 }
