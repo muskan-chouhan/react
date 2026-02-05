@@ -8,7 +8,7 @@ body{
     justify-content: space-between;
     padding: 10px;
 }
-.header,ul{
+.header ul{
   display: flex;
   list-style-type: none;
   width: 200px;
