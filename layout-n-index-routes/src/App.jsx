@@ -22,7 +22,7 @@ function App() {
       
       
        <Route path='/College' element={<College/>}>
-         <Route path='student' element={<Student/>}/>
+         <Route index element={<Student/>}/>
          <Route path='department' element={<Department/>}/>
       </Route>
     </Routes>
