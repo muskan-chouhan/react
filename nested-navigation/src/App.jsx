@@ -4,6 +4,9 @@ import About from './About'
 import Login from './Login'
 import Header from './header'
 import College from './College'
+import Student from './Student'
+import Department from './Department'
+import Details from './Details'
 import './Navbar.css'
 function App() {
 
@@ -14,8 +17,13 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/login' element={<Login/>}/>
-      <Route path='/College' element={<College/>}/>
+      <Route path='/College' element={<College/>}>
+       <Route path='student' element={<Student/>}/>
+       <Route path='department' element={<Department/>}/>
+       <Route path='details' element={<Details/>}/>
+      </Route>
     </Routes>
+    
 
 
    
