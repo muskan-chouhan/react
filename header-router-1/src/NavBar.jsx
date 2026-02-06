@@ -3,7 +3,7 @@ import './header.css'
 export default function NavBar() {
     return (<div className="header">
         <div>
-            <Link className="link"><h1>logo</h1></Link>
+            <Link className="link"  to='/'><h2>logo</h2></Link>
         </div>
         <div>
             <ul>

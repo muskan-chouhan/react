@@ -12,10 +12,17 @@ body{
   display: flex;
   list-style-type: none;
   margin: auto;
-  width: 200px;
+  width: 250px;
   justify-content: space-around;
 }
 
 .header ul li{
     padding: 10px;
+}
+.header .link h2{
+ margin: 0;
+}
+.header .link{
+    text-decoration: none;
+    font-size: 20px;
 }
