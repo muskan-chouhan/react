@@ -15,3 +15,7 @@ body{
   width: 200px;
   justify-content: space-around;
 }
+
+.header ul li{
+    padding: 10px;
+}
