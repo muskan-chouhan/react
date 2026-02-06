@@ -11,6 +11,7 @@ body{
 .header ul{
   display: flex;
   list-style-type: none;
+  margin: auto;
   width: 200px;
   justify-content: space-around;
 }
