@@ -1,33 +1,18 @@
-import {Navigate, Route, Routes} from 'react-router'
+import {Route, Routes} from 'react-router'
 import Home from './Home'
 import About from './About'
-import College from './College'
-import Student from './Student'
-import Department from './Department'
-import Header from './header'
-import './Navbar.css'
+import Login from './Login'
+import NavBar from './NavBar'
 function App() {
 
   return (
     <>
-    {/* <Header/> */}
+    <NavBar/>
     <Routes>
-
-      <Route element={<Header/>}>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-      </Route>
-
-      
-      
-      
-       <Route path='/College' element={<College/>}>
-         <Route index element={<Student/>}/>
-         <Route path='department' element={<Department/>}/>
-      </Route>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/login' element={<Login/>}/>
     </Routes>
-    
-
 
    
     </>
