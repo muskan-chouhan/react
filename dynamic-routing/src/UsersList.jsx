@@ -10,9 +10,9 @@ function UsersList() {
     <div style={{marginLeft:'20px'}}>
     <h1>User List Page</h1>
     {
-      userData.map((data)=>(
-        <div>
-          <h3><Link to = '' >{data.name}</Link></h3>
+      userData.map((data,index)=>(
+        <div key={index}>
+          <h3><Link to ={'/users/'+data.id}>{data.name}</Link></h3>
         </div>
       ))
     }
