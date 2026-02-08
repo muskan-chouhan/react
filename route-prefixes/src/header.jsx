@@ -9,9 +9,9 @@ export default function Header() {
         <div>
             <ul>
                 <li><Link className="link" to= '/'>Home</Link></li>
-                <li><Link className="link" to= '/user/about'>About</Link></li>
+                <li><Link className="link" to= '/in/user/about'>About</Link></li>
                 <li><Link className="link" to= '/College'>College</Link></li>
-                <li><Link className="link" to= '/user/login'>Login</Link></li>
+                <li><Link className="link" to= '/in/user/login'>Login</Link></li>
             </ul>
         </div>
     </div>
