@@ -16,7 +16,7 @@ function App() {
       <Route path='/about' element={<About/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/users/list?' element={<UsersList/>}/>
-      <Route path='/users/:id' element={<UserDetails/>}/>
+      <Route path='/users/:id/:name?' element={<UserDetails/>}/>
       
       <Route path='*' element={<PageNotFound/>}/>
        {/* <Route path='*' element={<Navigate to='/login'/>}/> */}
