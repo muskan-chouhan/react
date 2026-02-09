@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { Link, NavLink } from "react-router"
 import './header.css'
 export default function NavBar() {
     return (<div className="header">
@@ -7,7 +7,7 @@ export default function NavBar() {
         </div>
         <div>
             <ul>
-                <li><Link className="link" to= '/'>Home</Link></li>
+                <li><NavLink className="link" to= '/'>Home</NavLink></li>
                 <li><Link className="link" to= '/about'>About</Link></li>
                 <li><Link className="link" to= '/login'>login</Link></li>
                 <li><Link className="link" to= '/users'>Users</Link></li>
