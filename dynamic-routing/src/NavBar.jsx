@@ -7,7 +7,14 @@ export default function NavBar() {
         </div>
         <div>
             <ul>
-                <li><NavLink className="link" to= '/'>Home</NavLink></li>
+                <li>          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "link custom-active" : "link"
+            }
+          >
+            Home
+          </NavLink></li>
                 <li><NavLink className="link" to= '/about'>About</NavLink></li>
                 <li><NavLink className="link" to= '/login'>login</NavLink></li>
                 <li><NavLink className="link" to= '/users'>Users</NavLink></li>
