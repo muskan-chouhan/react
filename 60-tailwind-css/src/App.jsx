@@ -4,10 +4,10 @@ function App() {
 
   return (
     <>
-    <h1>Tailwind Css</h1>
-        <h1 className="text-3xl font-bold underline">
+    <h1 className="bg-red-700 text-3xl border-green-600 border-8">Tailwind Css Setup</h1>
+    <h2 className="text-3xl font-bold underline">
     Hello world!
-  </h1>
+  </h2>
   
     </>
   )
