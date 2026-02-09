@@ -12,7 +12,7 @@ body{
   display: flex;
   list-style-type: none;
   margin: auto;
-  width: 250px;
+  width: 370px;
   justify-content: space-around;
 }
 
