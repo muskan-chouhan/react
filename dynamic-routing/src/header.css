@@ -26,3 +26,8 @@ body{
     text-decoration: none;
     font-size: 20px;
 }
+.active{
+    font-size: 800px;
+    font-weight: bolder;
+    color: rgb(155, 165, 42);
+}
