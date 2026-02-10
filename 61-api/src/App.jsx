@@ -13,11 +13,16 @@ function App() {
     // console.log(response.users);
     setUsersData(response.users)
   } 
-  console.log(usersData);
+  // console.log(usersData);
   
   return (
     <>
       <h1>Fetch Data From Api</h1>
+      {
+       usersData && usersData.map((user)=>(
+         <h1>{user.firstName}</h1>
+       ))
+      }
     </>
   )
 }
