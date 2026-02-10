@@ -1,6 +1,7 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 function App() {
+  const [usersData,setUsersData] = useState([])
   useEffect(()=>{
          getUserData()
   },[])
@@ -9,9 +10,11 @@ function App() {
     const url = 'https://dummyjson.com/users'
     let response = await fetch(url) 
     response = await response.json() 
-    console.log(response);
-    
+    // console.log(response.users);
+    setUsersData(response.users)
   } 
+  console.log(usersData);
+  
   return (
     <>
       <h1>Fetch Data From Api</h1>
