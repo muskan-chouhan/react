@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-
+import './App.css'
 function App() {
   const [usersData,setUsersData] = useState([])
   useEffect(()=>{
@@ -20,7 +20,7 @@ function App() {
       <h1>Fetch Data From Api</h1>
       {
        usersData && usersData.map((user)=>(
-        <ul>
+        <ul className="user-list">
           <li>{user.firstName}</li>
           <li>{user.lastName}</li>
           <li>{user.age}</li>
