@@ -18,6 +18,11 @@ function App() {
   return (
     <>
       <h1>Fetch Data From Api</h1>
+              <ul className="user-list">
+          <li>First Name</li>
+          <li>Last Name</li>
+          <li>Age</li>
+        </ul>
       {
        usersData && usersData.map((user)=>(
         <ul className="user-list">
