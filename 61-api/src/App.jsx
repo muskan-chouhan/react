@@ -20,7 +20,12 @@ function App() {
       <h1>Fetch Data From Api</h1>
       {
        usersData && usersData.map((user)=>(
-         <h1>{user.firstName}</h1>
+        <ul>
+          <li>{user.firstName}</li>
+          <li>{user.lastName}</li>
+          <li>{user.age}</li>
+        </ul>
+       
        ))
       }
     </>
