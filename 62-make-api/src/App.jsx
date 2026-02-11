@@ -1,8 +1,14 @@
+import { useEffect } from "react";
 
-async function App() {
-  function getUsersData(){
+ function App() {
+
+  useEffect(()=>{
+    getUsersData()
+ },[])
+
+  async function getUsersData(){
    const url = 'http://localhost:3000/users'
-   const response = await fetch(url);
+   let response = await fetch(url);
    response = await response.json()
   console.log(response);
   
