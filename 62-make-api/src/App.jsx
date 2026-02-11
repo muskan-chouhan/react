@@ -23,6 +23,11 @@ function App() {
   return (
     <>
       <h1>install JSON server and Make API</h1>
+            <ul className="user-list user-list-head">
+        <li>Name</li>
+        <li>Age</li>
+        <li>Email</li>
+      </ul>
       {
         !loading?
         usersData && usersData.map((user) => (
