@@ -21,8 +21,8 @@ function App() {
     <>
       <h1>install JSON server and Make API</h1>
       {
-        usersData && usersData.map((user) => (
-          <ul className="user-list">
+        usersData && usersData.map((user,index) => (
+          <ul className="user-list" key={index}>
             <li>{user.name}</li>
             <li>{user.age}</li>
             <li>{user.email}</li>
