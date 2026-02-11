@@ -3,7 +3,9 @@ import './App.css'
 
 function App() {
   const [usersData, setUsersData] = useState([])
+  const [loading, setLoading] = useState(false)
   useEffect(() => {
+    setLoading(true)
     getUsersData()
   }, [])
 
@@ -13,22 +15,24 @@ function App() {
     response = await response.json()
     // console.log(response);
     setUsersData(response)
-    console.log(usersData);
-
+    setLoading(false)
+    // console.log(usersData);
+     
 
   }
   return (
     <>
       <h1>install JSON server and Make API</h1>
       {
+        !loading?
         usersData && usersData.map((user) => (
           <ul className="user-list" key={user.name}>
             <li>{user.name}</li>
             <li>{user.age}</li>
             <li>{user.email}</li>
           </ul>
-
         ))
+        :<h1>data loading...</h1>
       }
     </>
   )
