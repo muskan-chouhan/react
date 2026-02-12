@@ -1,0 +1,34 @@
+{
+    "users": [
+        {
+            "name": "anil",
+            "age": 22,
+            "email": "anil@gmail.com"
+        },
+        {
+            "name": "rahul",
+            "age": 23,
+            "email": "rahul@gmail.com"
+        },
+        {
+            "name": "raj",
+            "age": 21,
+            "email": "raj@gmail.com"
+        },
+        {
+            "name": "neha",
+            "age": 22,
+            "email": "neha@gmail.com"
+        },
+        {
+            "name": "mahak",
+            "age": 22,
+            "email": "mahak@gmail.com"
+        },
+                {
+            "name": "khushi",
+            "age": 19,
+            "email": "khushi@gmail.com"
+        }
+    ]
+}

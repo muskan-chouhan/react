@@ -1,10 +1,10 @@
-
+import UserList from "./UserList"
 function App() {
-
 
   return (
     <>
-    <h1>routes for user list and add user Ui</h1>
+    <h2>Make Routes  and Pages for add users and user list UI</h2>
+    <UserList />
     </>
   )
 }
