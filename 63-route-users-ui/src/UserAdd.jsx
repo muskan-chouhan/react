@@ -4,6 +4,10 @@ export default function UserAdd(){
     const [name,setName]=useState('')
     const [age,setAge]=useState('')
     const [email,setEmail]=useState('')
+    const createUser = ()=>{
+        console.log(name,age,email);
+        
+    }
     return(
         <div style={{textAlign:"center"}}>
             <h1>Add New User</h1>
@@ -25,7 +29,7 @@ export default function UserAdd(){
                 onChange={(e)=>setEmail(e.target.value)}>
             </input>
              <br></br><br></br>
-             <button>Add User</button>
+             <button onClick={createUser}>Add User</button>
         </div>
     )
 }
