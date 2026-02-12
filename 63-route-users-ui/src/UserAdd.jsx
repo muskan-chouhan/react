@@ -1,6 +1,6 @@
 export default function UserAdd(){
     return(
-        <div>
+        <div style={{textAlign:"center"}}>
             <h1>Add New User</h1>
             <input
                 type="text" 
