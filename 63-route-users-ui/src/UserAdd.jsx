@@ -15,12 +15,14 @@ export default function UserAdd(){
             <br></br><br></br>
             <input
                 type="number" 
-                placeholder="Enter Age">
+                placeholder="Enter Age"
+                onChange={(e)=>setAge(e.target.value)}>
             </input>
             <br></br><br></br>
             <input
                 type="email" 
-                placeholder="Enter Email">
+                placeholder="Enter Email"
+                onChange={(e)=>setEmail(e.target.value)}>
             </input>
              <br></br><br></br>
              <button>Add User</button>
