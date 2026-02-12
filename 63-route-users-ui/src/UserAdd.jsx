@@ -4,9 +4,16 @@ export default function UserAdd(){
     const [name,setName]=useState('')
     const [age,setAge]=useState('')
     const [email,setEmail]=useState('')
-    const createUser = ()=>{
+
+    const createUser = async()=>{
         console.log(name,age,email);
+        const url = fetch("http://localhost:3000/users")
+        let response = await fetch(url,{
+            method:'Post',
+            body:JSON.stringify({name,age,email})
+        });
         
+        response = await response.JSON
     }
     return(
         <div style={{textAlign:"center"}}>
