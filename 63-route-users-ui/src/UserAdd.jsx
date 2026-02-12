@@ -7,13 +7,16 @@ export default function UserAdd(){
 
     const createUser = async()=>{
         console.log(name,age,email);
-        const url = fetch("http://localhost:3000/users")
+        const url = "http://localhost:3000/users"
         let response = await fetch(url,{
             method:'Post',
             body:JSON.stringify({name,age,email})
         });
         
-        response = await response.JSON
+        response = await response.json()
+        if(response){
+            alert('new user added')
+        }
     }
     return(
         <div style={{textAlign:"center"}}>
