@@ -16,6 +16,8 @@ export default function UserAdd(){
                 type="email" 
                 placeholder="Enter Email">
             </input>
+             <br></br><br></br>
+             <button>Add User</button>
         </div>
     )
 }
