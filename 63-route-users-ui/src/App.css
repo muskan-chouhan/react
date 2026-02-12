@@ -13,3 +13,11 @@
   font-size: 20px;
   font-weight: 800;
 }
+
+.nav-list{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: larger;
+  font-weight: 800;
+}
