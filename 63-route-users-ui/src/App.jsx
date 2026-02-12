@@ -5,10 +5,11 @@ function App() {
 
   return (
     <>
-    <h2>Make Routes  and Pages for add users and user list UI</h2>
+    {/* <h2>Make Routes  and Pages for add users and user list UI</h2> */}
 
     <Routes>
       <Route path="/" element={<UserList/>}/>
+      <Route path="/adduser" element={<UserAdd/>}/>
     </Routes>
     
     </>
