@@ -1,10 +1,16 @@
+import { Route, Routes } from "react-router"
 import UserList from "./UserList"
+import UserAdd from "./UserAdd"
 function App() {
 
   return (
     <>
     <h2>Make Routes  and Pages for add users and user list UI</h2>
-    <UserList />
+
+    <Routes>
+      <Route path="/" element={<UserList/>}/>
+    </Routes>
+    
     </>
   )
 }

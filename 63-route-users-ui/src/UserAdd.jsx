@@ -1,5 +1,5 @@
-function UserAdd(){
+export default function UserAdd(){
     return(
-        <h1>Add User</h1>
+        <h1>Add New User</h1>
     )
 }
