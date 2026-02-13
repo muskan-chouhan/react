@@ -28,7 +28,8 @@ function UserList() {
 
     if (response) {
         alert('User deleted');
-
+        //  // UI se user hatao
+        getUsersData()
     }
 }  
     return (
