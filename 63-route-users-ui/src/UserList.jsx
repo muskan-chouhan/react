@@ -39,7 +39,7 @@ function UserList() {
                             <li>{user.name}</li>
                             <li>{user.age}</li>
                             <li>{user.email}</li>
-                            <li><button>Delete</button></li>
+                            <li><button onClick={()=>deleteUser(user.id)}>Delete</button></li>
                         </ul>
                     ))
                     : <h1>data loading...</h1>
