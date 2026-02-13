@@ -19,10 +19,18 @@ function UserList() {
         // console.log(usersData)
     }
 
-    const deleteUser=(id)=>{
-        console.log(id);
-        
+  const deleteUser = async (id) => {
+    const url = 'http://localhost:3000/users';
+
+    let response = await fetch(url + "/" + id, {
+        method: 'DELETE'
+    });
+
+    if (response) {
+        alert('User deleted');
+
     }
+}  
     return (
         <>
 

@@ -25,12 +25,6 @@
       "id": "87ad"
     },
     {
-      "name": "mahak",
-      "age": 22,
-      "email": "mahak@gmail.com",
-      "id": "0676"
-    },
-    {
       "name": "khushi",
       "age": 19,
       "email": "khushi@gmail.com",
@@ -41,13 +35,6 @@
       "name": "kanak",
       "age": 22,
       "email": "kanak@gamil.com"
-    },
-
-    {
-      "id": "3451",
-      "name": "kulddep",
-      "age": "44",
-      "email": "kulddep@mail.com"
     }
   ]
 }
