@@ -42,35 +42,12 @@
       "age": 22,
       "email": "kanak@gamil.com"
     },
-    {
-      "id": "3459",
-      "name": "kulddep",
-      "age": "44",
-      "email": "kulddep@mail.com"
-    },
+
     {
       "id": "3451",
       "name": "kulddep",
       "age": "44",
       "email": "kulddep@mail.com"
-    },
-    {
-      "id": "e779",
-      "name": "MOHIT",
-      "age": "22",
-      "email": "MOHIT"
-    },
-    {
-      "id": "f0c0",
-      "name": "MOHIT",
-      "age": "22",
-      "email": "MOHIT"
-    },
-    {
-      "id": "c5f0",
-      "name": "MOHIT",
-      "age": "22",
-      "email": "MOHIT"
     }
   ]
 }
