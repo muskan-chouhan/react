@@ -16,9 +16,12 @@ function UserList() {
         // console.log(response);
         setUsersData(response)
         setLoading(false)
-        // console.log(usersData);
+        // console.log(usersData)
+    }
 
-
+    const deleteUser=(id)=>{
+        console.log(id);
+        
     }
     return (
         <>
