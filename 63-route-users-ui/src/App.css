@@ -1,13 +1,13 @@
 .user-list {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   border: 1px solid #aaa;
-  margin: 0;
+  margin: 20px;
   padding: 10px;
   list-style: none;
 
-
 }
+
 
 .user-list-head {
   font-size: 20px;

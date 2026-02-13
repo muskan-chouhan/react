@@ -27,6 +27,7 @@ function UserList() {
                 <li>Name</li>
                 <li>Age</li>
                 <li>Email</li>
+                <li>Action</li>
             </ul>
             {
                 !loading ?
