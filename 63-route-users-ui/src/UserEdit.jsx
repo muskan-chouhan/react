@@ -8,9 +8,12 @@ function UserEdit(){
   useEffect(()=>{
      getUserData();
   },[])
-  
+
   const getUserData= async()=>{
-    console.log(id);
+    // console.log(id);
+    const url = "http://localhost:3000/users/"+id
+    console.log(url);
+    
     
   }
     return(
