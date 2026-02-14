@@ -2,9 +2,10 @@ import { useEffect } from "react";
 import { useParams } from "react-router";
 import { useState } from "react"
 function UserEdit() {
-        const [name,setName]=useState('')
-        const [age,setAge]=useState('')
-        const [email,setEmail]=useState('')
+    const [name, setName] = useState('')
+    const [age, setAge] = useState('')
+    const [email, setEmail] = useState('')
+
     const { id } = useParams();
     //   console.log(id);
 
@@ -19,6 +20,9 @@ function UserEdit() {
         let response = await fetch(url);
         response = await response.json()
         // console.log(response); 
+        setName(response.name)
+        setAge(response.age)
+        setEmail(response.email)
     }
     return (
         <div style={{ textAlign: "center" }}>
