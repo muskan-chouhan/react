@@ -8,7 +8,8 @@ function UserEdit(){
   useEffect(()=>{
      getUserData();
   },[])
-  const getUserData=()=>{
+  
+  const getUserData= async()=>{
     console.log(id);
     
   }
