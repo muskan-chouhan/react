@@ -51,6 +51,9 @@ function UserList() {
                             <li>
                                 <button onClick={()=>deleteUser(user.id)}>Delete</button>
                             </li>
+                            <li>
+                                <button onClick={()=>deleteUser(user.id)}>Edit</button>
+                            </li>
                         </ul>
                     ))
                     : <h1>data loading...</h1>
