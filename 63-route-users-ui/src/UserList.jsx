@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import './App.css'
+import { useNavigate } from "react-router";
 
 function UserList() {
     const [usersData, setUsersData] = useState([])
     const [loading, setLoading] = useState(false)
+    const navigate = useNavigate()
     useEffect(() => {
         setLoading(true)
         getUsersData()
