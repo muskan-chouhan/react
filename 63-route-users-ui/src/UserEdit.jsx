@@ -29,19 +29,22 @@ function UserEdit() {
             <h1>User Edit Page</h1>
             <input
                 type="text"
-                placeholder="user name">
+                placeholder="user name"
+                value={name}>
             </input>
             <br></br>
             <br></br>
             <input
                 type="number"
-                placeholder="user age">
+                placeholder="user age"
+                value={age}>
             </input>
             <br></br>
             <br></br>
             <input
                 type="text"
-                placeholder="user email">
+                placeholder="user email"
+                value={email}>
             </input>
             <br></br>
             <br></br>
