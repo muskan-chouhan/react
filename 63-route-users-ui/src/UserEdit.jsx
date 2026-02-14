@@ -20,6 +20,7 @@ function UserEdit(){
             </input>
             <br></br>
             <br></br>
+            <button>Edit User</button>
         </div>
     )
 }
