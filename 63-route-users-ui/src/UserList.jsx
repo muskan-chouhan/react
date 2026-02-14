@@ -34,6 +34,10 @@ function UserList() {
         getUsersData()
     }
 }  
+
+const editUser = () =>{
+   navigate("/edit");
+}
     return (
         <>
 
