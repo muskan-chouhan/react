@@ -1,4 +1,7 @@
+import { useParams } from "react-router";
+
 function UserEdit(){
+  const {id} = useParams();
     return(
         <div style={{textAlign:"center"}}>
             <h1>User Edit Page</h1>
