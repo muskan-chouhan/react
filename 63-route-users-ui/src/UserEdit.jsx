@@ -6,6 +6,17 @@ function UserEdit(){
                 type="text"
                 placeholder="user name">
             </input>
+            <br></br>
+            <input
+                type="number"
+                placeholder="user age">
+            </input>
+            <br></br>
+            <input
+                type="text"
+                placeholder="user email">
+            </input>
+            <br></br>
         </div>
     )
 }
