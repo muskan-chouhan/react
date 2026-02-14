@@ -33,13 +33,16 @@ export default function UserAdd(){
                 onChange={(e)=>setAge(e.target.value)}>
             </input>
             <br></br><br></br>
-            <input
+            <input  
                 type="email" 
                 placeholder="Enter Email"
                 onChange={(e)=>setEmail(e.target.value)}>
             </input>
+
              <br></br><br></br>
              <button onClick={createUser}>Add User</button>
         </div>
     )
+
+    
 }
