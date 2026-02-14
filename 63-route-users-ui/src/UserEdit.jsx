@@ -7,15 +7,18 @@ function UserEdit(){
                 placeholder="user name">
             </input>
             <br></br>
+            <br></br>
             <input
                 type="number"
                 placeholder="user age">
             </input>
             <br></br>
+            <br></br>
             <input
                 type="text"
                 placeholder="user email">
             </input>
+            <br></br>
             <br></br>
         </div>
     )
