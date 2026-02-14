@@ -36,7 +36,7 @@ function UserList() {
 }  
 
 const editUser = (id) =>{
-   navigate("/edit"+id);
+   navigate("/edit/"+id);
 }
     return (
         <>
