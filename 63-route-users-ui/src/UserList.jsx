@@ -52,7 +52,7 @@ function UserList() {
                                 <button onClick={()=>deleteUser(user.id)}>Delete</button>
                             </li>
                             <li>
-                                <button onClick={()=>deleteUser(user.id)}>Edit</button>
+                                <button onClick={()=>editUser(user.id)}>Edit</button>
                             </li>
                         </ul>
                     ))
