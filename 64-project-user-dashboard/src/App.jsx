@@ -9,7 +9,7 @@ function App() {
     setProfile(!profile)
    }
   function changeName() {
-    if (userName === "Muskan/") {
+    if (userName === "Muskan") {
       setUserName('radha')
     } else {
       setUserName('Muskan')
@@ -22,7 +22,11 @@ function App() {
   return (
     <>
       <h1>Live user Dashboard</h1>
-      <UserProfile name={userName} status={status} />
+      {
+        profile?<UserProfile name={userName} status={status} />
+        :null
+      }
+      
       <br></br><br></br>
       <button onClick={changeName}>Change User</button>
       <button onClick={changestatus}>Toggle Status</button>
