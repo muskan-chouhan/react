@@ -1,24 +1,12 @@
 import { useState } from "react"
 
 function UserProfile() {
- const [userName,setUserName] = useState([
-    {
-    name:"muskan",
-    role : "java"
-    },
-    {
-    name:"khushi",
-    role : "html"
-    },
-    {
-    name:"muskan",
-    role : "php"
-    },
-   ])
+    const [userName, setUserName] = useState('Muskan')
 
-    function changeName(){
-     
-   }
+
+    function changeName() {
+        setUserName('radha')
+    }
     const [cardStyle, setCardStyle] = useState({
         width: "200px",
         border: "1px solid #cccccc3b",
@@ -27,7 +15,7 @@ function UserProfile() {
     })
 
     const textColor = "black"
-  
+
     return (
         <>
             <div style={{
@@ -46,9 +34,8 @@ function UserProfile() {
                         padding: "10px",
                         color: textColor
                     }}>
-                        {userName.map((user)=>(
-                             <h2>{user.name}</h2>
-                        ))}
+                        <h2>{userName}</h2>
+
                         <p>Software Developer</p>
                     </div>
                 </div>
