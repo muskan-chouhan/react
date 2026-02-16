@@ -1,17 +1,7 @@
-import { useState } from "react"
+import { useState } from 'react'
 
-function UserProfile() {
-    const [userName, setUserName] = useState('Muskan')
-
-
-    function changeName() {
-        if(userName  === "Muskan"){
-           setUserName('radha')
-        }else{
-            setUserName('Muskan')
-        }
-        
-    }
+function UserProfile({name}) {
+  
     const [cardStyle, setCardStyle] = useState({
         width: "200px",
         border: "1px solid #cccccc3b",
@@ -39,7 +29,7 @@ function UserProfile() {
                         padding: "10px",
                         color: textColor
                     }}>
-                        <h2>{userName}</h2>
+                        <h2>{name}</h2>
 
                         <p>Software Developer</p>
                     </div>
@@ -47,10 +37,7 @@ function UserProfile() {
 
             </div>
 
-            <br></br><br></br>
-            <button onClick={changeName}>Change User</button>
-            <button>Toggle Status</button>
-            <button>Hide Profile</button>
+
         </>
     )
 }
