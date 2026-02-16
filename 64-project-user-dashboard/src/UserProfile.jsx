@@ -5,7 +5,12 @@ function UserProfile() {
 
 
     function changeName() {
-        setUserName('radha')
+        if(userName  === "Muskan"){
+           setUserName('radha')
+        }else{
+            setUserName('Muskan')
+        }
+        
     }
     const [cardStyle, setCardStyle] = useState({
         width: "200px",
