@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-function UserProfile({name}) {
-  
+function UserProfile({ name,status }) {
+
     const [cardStyle, setCardStyle] = useState({
         width: "200px",
         border: "1px solid #cccccc3b",
@@ -29,7 +29,7 @@ function UserProfile({name}) {
                         padding: "10px",
                         color: textColor
                     }}>
-                        <h2>{name}</h2>
+                        <h2>{name}</h2><h3>{status}</h3>
 
                         <p>Software Developer</p>
                     </div>
