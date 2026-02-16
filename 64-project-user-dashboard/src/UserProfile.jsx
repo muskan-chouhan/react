@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function UserProfile({ name,status }) {
+function UserProfile({ name,status}) {
 
     const [cardStyle, setCardStyle] = useState({
         width: "200px",
