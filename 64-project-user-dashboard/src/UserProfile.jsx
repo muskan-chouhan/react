@@ -29,8 +29,10 @@ function UserProfile({ name,status }) {
                         padding: "10px",
                         color: textColor
                     }}>
-                        <h2>{name}</h2><h3>{status}</h3>
-
+                        <h2>{name}</h2>
+                        {status?<h3>Active</h3>
+                         :<h3>Inactive</h3>
+                        }
                         <p>Software Developer</p>
                     </div>
                 </div>

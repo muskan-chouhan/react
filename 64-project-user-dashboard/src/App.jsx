@@ -14,14 +14,7 @@ function App() {
 
   }
   function changestatus(){
-    if(status){
-      setStatus(active)
-      console.log(status);
-      
-    }else{
-      setStatus(inactive)
-      console.log(status);
-    }
+   setStatus(!status)
   }
   return (
     <>
