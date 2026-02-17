@@ -10,10 +10,15 @@ function UserProfile({ name,status}) {
     })
 
     const textColor = "black"
-    useEffect(() => {
-   console.log("Profile loaded");
-   
+useEffect(() => {
+    console.log("Fetching user data...");
+
+   return () => {
+     console.log("Profile Remove");
+     
+   }
 }, [])
+
     useEffect(()=>{
           console.log("User changed")
     },[name])
