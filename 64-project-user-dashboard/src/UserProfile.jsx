@@ -24,7 +24,7 @@ useEffect(() => {
     },[name])
 
         useEffect(()=>{
-          console.log("Status changed")
+          console.log(`Status change to ${status}`)
     },[status])
     return (
         <>
