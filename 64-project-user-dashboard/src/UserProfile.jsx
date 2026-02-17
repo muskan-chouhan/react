@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-function UserProfile({ name,status}) {
+function UserProfile({ name, status }) {
 
     const [cardStyle, setCardStyle] = useState({
         width: "200px",
@@ -10,22 +10,22 @@ function UserProfile({ name,status}) {
     })
 
     const textColor = "black"
-useEffect(() => {
-    console.log("Fetching user data...");
+    useEffect(() => {
+        console.log("Fetching user data...");
 
-   return () => {
-     console.log("Profile Remove");
-     
-   }
-}, [])
+        return () => {
+            console.log("Cleaning up user session");
+        }
+    }, [])
 
-    useEffect(()=>{
-          console.log(`user change to ${name}`)
-    },[name])
+    useEffect(() => {
+        console.log(`User changed to ${name}`);
+    }, [name])
 
-        useEffect(()=>{
-          console.log(`Status change to ${status}`)
-    },[status])
+    useEffect(() => {
+        console.log(`User is now ${status ? "Active" : "Inactive"}`);
+    }, [status])
+
     return (
         <>
             <div style={{
@@ -45,8 +45,8 @@ useEffect(() => {
                         color: textColor
                     }}>
                         <h2>{name}</h2>
-                        {status?<h3>Active</h3>
-                         :<h3>Inactive</h3>
+                        {status ? <h3>Active</h3>
+                            : <h3>Inactive</h3>
                         }
                         <p>Software Developer</p>
                     </div>
