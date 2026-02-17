@@ -10,6 +10,10 @@ function UserProfile({ name,status}) {
     })
 
     const textColor = "black"
+    useEffect(() => {
+   console.log("Profile loaded");
+   
+}, [])
     useEffect(()=>{
           console.log("User changed")
     },[name])
