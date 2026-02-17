@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function UserProfile({ name,status}) {
 
@@ -10,7 +10,13 @@ function UserProfile({ name,status}) {
     })
 
     const textColor = "black"
+    useEffect(()=>{
+          console.log("User changed")
+    },[name])
 
+        useEffect(()=>{
+          console.log("Status changed")
+    },[status])
     return (
         <>
             <div style={{
