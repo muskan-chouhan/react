@@ -20,7 +20,7 @@ useEffect(() => {
 }, [])
 
     useEffect(()=>{
-          console.log("User changed")
+          console.log("User changed to " + name)
     },[name])
 
         useEffect(()=>{
