@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="container">
-      <button onClick={goOnline} style={{border: '2px solid green'}}>Go Online</button>
-      <button onClick={goOffline} style={{border: '2px solid red'}}>Go Offline</button>
+      <button onClick={goOnline} style={{border: status === "Online" ? "2px solid green"  : "2px solid gray"}}>Go Online</button>
+      <button onClick={goOffline} style={{border: status === "Offline" ? "2px solid red" : "2px solid gray"}}>Go Offline</button>
 
       <div className="status">
         <div className={status === "Online" ? "online" : "offline"}></div>
