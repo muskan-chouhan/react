@@ -11,10 +11,21 @@ function App() {
   function goOffline() {
     setStatus("Offline");
   }
+const getButtonStyle = (type) => {
+   const isActive = status === type
+
+   return {
+      backgroundColor: isActive
+         ? (type === "Online" ? "green" : "red")
+         : "#eee",
+      color: isActive ? "white" : "black",
+      border: "2px solid " + (type === "Online" ? "green" : "red")
+   }
+}
 
   return (
     <div className="container">
-      <button onClick={goOnline} style={{border: status === "Online" ? "2px solid green"  : "2px solid gray"}}>Go Online</button>
+      <button onClick={goOnline} style={getButtonStyle("Online")}>Go Online</button>
       <button onClick={goOffline} style={{border: status === "Offline" ? "2px solid red" : "2px solid gray"}}>Go Offline</button>
 
       <div className="status">
