@@ -4,7 +4,7 @@ const Alert = ({ msg, type }) => {
     return (
         <>
             <div>
-                <p className={`${style.para} ${style[type]}`}>
+                <p className={`${style.alert} ${style[type]}`}>
                     {msg}
                 </p>
             </div>
