@@ -4,14 +4,14 @@ import Alert from './Alert'
 function App() {
   const [msg,setmsg] = useState('')
   function showAlert (Message){
-      setmsg('Message')
+      setmsg(Message)
   }
   return (
     <>
       <h1>Alert Project</h1>
       <Alert msg={msg}/>
       <br></br>
-      <button onClick={() => showAlert("Hello")}>Show Success</button>
+      <button onClick={() => showAlert("Data Saved")}>Show Success</button>
       <button>Show Error</button>
       <button>Show Warning</button>
     </>
