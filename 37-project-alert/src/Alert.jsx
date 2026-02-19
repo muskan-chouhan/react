@@ -1,10 +1,13 @@
 import style from './css/alert.module.css'
-const Alert = ({msg,type}) =>{
-    return(
+const Alert = ({ msg, type }) => {
+
+    return (
         <>
-       <div>
-        <p className={style.para} style={{color:type}}>{msg}</p>
-       </div>
+            <div>
+                <p className={`${style.para} ${style[type]}`}>
+                    {msg}
+                </p>
+            </div>
 
         </>
     )
