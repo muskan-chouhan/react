@@ -1,0 +1,9 @@
+.para{
+    width: 200px;
+    height: 63px;
+    background: #e5dede;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+}

@@ -1,8 +1,10 @@
-const Alert = () =>{
+import style from './css/alert.module.css'
+const Alert = ({msg}) =>{
     return(
         <>
-        
-       <div>Message</div>
+       <div>
+        <p className={style.para}>{msg}</p>
+       </div>
 
         </>
     )
