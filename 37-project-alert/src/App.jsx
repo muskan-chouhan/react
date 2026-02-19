@@ -12,8 +12,8 @@ function App() {
       <Alert msg={msg}/>
       <br></br>
       <button onClick={() => showAlert("Data Saved")}>Show Success</button>
-      <button>Show Error</button>
-      <button>Show Warning</button>
+      <button onClick={() => showAlert("Something Wrong")}>Show Error</button>
+      <button onClick={() => showAlert("Please Try again")}>Show Warning</button>
     </>
   )
 }
