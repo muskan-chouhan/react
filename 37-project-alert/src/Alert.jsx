@@ -1,5 +1,5 @@
 import style from './css/alert.module.css'
-const Alert = ({msg}) =>{
+const Alert = ({msg,type}) =>{
     return(
         <>
        <div>
