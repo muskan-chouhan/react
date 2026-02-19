@@ -3,7 +3,8 @@ import Alert from './Alert'
 
 function App() {
   const [msg,setmsg] = useState('')
-  function showAlert (Message){
+  const [type, setType] = useState("")
+  function showAlert (Message,tp){
       setmsg(Message)
   }
   return (
@@ -11,9 +12,9 @@ function App() {
       <h1>Alert Project</h1>
       <Alert msg={msg}/>
       <br></br>
-      <button onClick={() => showAlert("Data Saved")}>Show Success</button>
-      <button onClick={() => showAlert("Something Wrong")}>Show Error</button>
-      <button onClick={() => showAlert("Please Try again")}>Show Warning</button>
+      <button onClick={() => showAlert("Data Saved",green)}>Show Success</button>
+      <button onClick={() => showAlert("Something Wrong",red)}>Show Error</button>
+      <button onClick={() => showAlert("Please Try again",blue)}>Show Warning</button>
     </>
   )
 }
