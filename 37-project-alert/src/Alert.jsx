@@ -3,7 +3,7 @@ const Alert = ({msg,type}) =>{
     return(
         <>
        <div>
-        <p className={style.para}>{msg}</p>
+        <p className={style.para} style={{color:type}}>{msg}</p>
        </div>
 
         </>
