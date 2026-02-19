@@ -12,9 +12,9 @@ function App() {
       <h1>Alert Project</h1>
       <Alert msg={msg}/>
       <br></br>
-      <button onClick={() => showAlert("Data Saved",green)}>Show Success</button>
-      <button onClick={() => showAlert("Something Wrong",red)}>Show Error</button>
-      <button onClick={() => showAlert("Please Try again",blue)}>Show Warning</button>
+      <button onClick={() => showAlert("Data Saved",'green')}>Show Success</button>
+      <button onClick={() => showAlert("Something Wrong",'red')}>Show Error</button>
+      <button onClick={() => showAlert("Please Try again",'blue')}>Show Warning</button>
     </>
   )
 }
