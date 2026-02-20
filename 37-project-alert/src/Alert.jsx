@@ -1,8 +1,5 @@
 import style from './css/alert.module.css'
 const Alert = ({ msg, type,onClose }) => {
-
-
-    
     return (
         <>
         {/* className={styles.alert + " " + styles[type]} */}
