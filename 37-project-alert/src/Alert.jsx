@@ -1,9 +1,10 @@
 import style from './css/alert.module.css'
 const Alert = ({ msg, type, onClose ,isVisible}) => {
+
     return (
-        <>
+        <>  
             {/* className={styles.alert + " " + styles[type]} */}
-            <div className={`${style.alert} ${style[type]}`}>
+            <div className={`${style.alert} ${style[type]} ${style[isVisible]}`}>
                 <span>{msg}</span>
                 <span className={style.closeBtn} onClick={onClose}>×</span>
             </div>

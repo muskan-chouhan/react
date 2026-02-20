@@ -4,7 +4,7 @@ import Alert from './Alert'
 function App() {
   const [msg, setmsg] = useState('')
   const [type, setType] = useState("")
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(false)
 
   function showAlert(Message, tp) {
     setmsg(Message)
