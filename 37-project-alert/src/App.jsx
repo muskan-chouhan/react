@@ -9,12 +9,10 @@ function App() {
   function showAlert(Message, tp) {
     setmsg(Message)
     setType(tp)
-    setIsVisible(true)
   }
 
-  const close = () => {
-    setIsVisible(false) //start fade animation
-    
+  const closeAlert = () => {
+    setIsVisible(false)
     setTimeout(() => {
       setmsg('')
       setType('')
@@ -27,7 +25,12 @@ function App() {
       <h1>Alert Project</h1>
       {
         //  {msg && <Alert msg={msg} type={type} />}
-        msg ? <Alert msg={msg} type={type} onClose={close} isVisible={isVisible}/> : null
+        msg ? 
+        <Alert
+         msg={msg} 
+         type={type} 
+         onClose={closeAlert} 
+         isVisible={isVisible}/> : null
       }
 
       <br></br>
