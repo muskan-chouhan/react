@@ -4,7 +4,7 @@ import Alert from './Alert'
 function App() {
   const [msg, setmsg] = useState('')
   const [type, setType] = useState("")
-  const [isVisible ,setIsVisible] = useState()
+  const [isVisible, setIsVisible] = useState(true)
 
   function showAlert(Message, tp) {
     setmsg(Message)
@@ -12,15 +12,20 @@ function App() {
   }
 
   const close = (msg, type) => {
-    setmsg('')
-    setType('')
+    setIsVisible(false)
+    setTimeout(() => {
+      setmsg('')
+      setType('')
+    }, 3000);
+
   }
+
   return (
     <>
       <h1>Alert Project</h1>
       {
         //  {msg && <Alert msg={msg} type={type} />}
-        msg ? <Alert msg={msg} type={type} onClose={close} /> : null
+        msg ? <Alert msg={msg} type={type} onClose={close} isVisible={isVisible}/> : null
       }
 
       <br></br>
