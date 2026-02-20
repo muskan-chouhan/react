@@ -11,7 +11,7 @@ function App() {
     setType(tp)
   }
 
-  const close = (msg, type) => {
+  const close = () => {
     setIsVisible(false)
     setTimeout(() => {
       setmsg('')
