@@ -11,7 +11,10 @@ function App() {
   return (
     <>
       <h1>Alert Project</h1>
-      <Alert msg={msg} type={type}/>
+      {
+        msg?<Alert msg={msg} type={type}/>:null
+      }
+      
       <br></br>
       <button onClick={() => showAlert("Data Saved",'green')}>Show Success</button>
       <button onClick={() => showAlert("Something Wrong",'red')}>Show Error</button>
