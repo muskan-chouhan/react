@@ -9,6 +9,7 @@ function App() {
   function showAlert(Message, tp) {
     setmsg(Message)
     setType(tp)
+    setIsVisible(true)
   }
 
   const close = () => {
@@ -16,7 +17,7 @@ function App() {
     setTimeout(() => {
       setmsg('')
       setType('')
-    }, 3000);
+    }, 300);
 
   }
 

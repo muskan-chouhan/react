@@ -4,7 +4,7 @@ const Alert = ({ msg, type, onClose ,isVisible}) => {
     return (
         <>  
             {/* className={styles.alert + " " + styles[type]} */}
-            <div className={`${style.alert} ${style[type]} ${style[isVisible]}`}>
+            <div className={`${style.alert} ${style[type]} !isVisible && styles.hide`}>
                 <span>{msg}</span>
                 <span className={style.closeBtn} onClick={onClose}>×</span>
             </div>
