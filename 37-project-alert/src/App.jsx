@@ -4,16 +4,20 @@ import Alert from './Alert'
 function App() {
   const [msg,setmsg] = useState('')
   const [type, setType] = useState("")
+  
   function showAlert (Message,tp){
       setmsg(Message)
       setType(tp)
   }
+  const close = (msg,type) =>{
+     msg = "";
+    }
   return (
     <>
       <h1>Alert Project</h1>
       {
       //  {msg && <Alert msg={msg} type={type} />}
-        msg?<Alert msg={msg} type={type}/>:null
+        msg?<Alert msg={msg} type={type} onClose ={close} showAlert ={showAlert}/>:null
       }
       
       <br></br>
