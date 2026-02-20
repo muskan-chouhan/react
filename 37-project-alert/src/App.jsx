@@ -4,13 +4,15 @@ import Alert from './Alert'
 function App() {
   const [msg,setmsg] = useState('')
   const [type, setType] = useState("")
-  
+
   function showAlert (Message,tp){
       setmsg(Message)
       setType(tp)
   }
+
   const close = (msg,type) =>{
      msg = "";
+     type= "";
     }
   return (
     <>
