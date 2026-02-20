@@ -13,7 +13,8 @@ function App() {
   }
 
   const close = () => {
-    setIsVisible(false)
+    setIsVisible(false) //start fade animation
+    
     setTimeout(() => {
       setmsg('')
       setType('')
