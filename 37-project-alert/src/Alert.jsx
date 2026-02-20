@@ -3,11 +3,13 @@ const Alert = ({ msg, type }) => {
 
     return (
         <>
-            <div>
-                <p className={`${style.alert} ${style[type]}`}>
-                    {msg}
-                </p>
+        {/* className={styles.alert + " " + styles[type]} */}
+            <div className={`${style.alert} ${style[type]}`}>
+                <span>{msg}</span>
+                <span className={style
+                    .closeBtn}>×</span>
             </div>
+
 
         </>
     )
