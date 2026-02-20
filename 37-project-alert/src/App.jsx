@@ -12,6 +12,7 @@ function App() {
     <>
       <h1>Alert Project</h1>
       {
+      //  {msg && <Alert msg={msg} type={type} />}
         msg?<Alert msg={msg} type={type}/>:null
       }
       
