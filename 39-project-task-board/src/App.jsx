@@ -10,7 +10,7 @@ const BoardWrapper = styled.div`
   padding: 20px;
   background: #f4f6f8;
   display:flex;
-  alignItems:center;
+  align-items:center;
 `
 
 function App() {
