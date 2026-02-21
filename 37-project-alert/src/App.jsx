@@ -9,6 +9,7 @@ function App() {
   function showAlert(Message, tp) {
     setmsg(Message)
     setType(tp)
+    setIsVisible(true)
   }
 
   const closeAlert = () => {
