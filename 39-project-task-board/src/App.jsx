@@ -1,15 +1,24 @@
 import { useState } from 'react'
 import TaskForm from './TaskForm'
 import ShowCard from './ShowTaskCard'
+import styled from 'styled-components'
+
+const BoardWrapper = styled.div`
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f6f8;
+  display:flex;
+  alignItems:center;
+`
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     <h1>Task Priorty Board</h1>
-     <TaskForm/>
-     <ShowCard/>
+      <BoardWrapper>
+        <h1>Task Priority Board</h1>
+      </BoardWrapper>
     </>
   )
 }
