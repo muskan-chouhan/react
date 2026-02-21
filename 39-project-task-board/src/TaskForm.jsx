@@ -1,6 +1,13 @@
+import styled from 'styled-components'
 const TaskForm = () => {
+    const FormCard = styled.div`
+      border:2px solid black;
+      width:300px;
+      padding:20px;
+      border-radius:5px;
+    `
     return (
-        <div>
+        <FormCard>
             <form>
                 <input type='text' placeholder='Enter you Task'></input>
                 <br /><br />
@@ -12,7 +19,7 @@ const TaskForm = () => {
                 <br /><br />
                 <button>Add Task</button>
             </form>
-        </div>
+        </FormCard>
     )
 }
 

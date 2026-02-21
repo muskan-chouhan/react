@@ -22,6 +22,7 @@ function App() {
       <BoardWrapper>
         <Container>
         <h1>Task Priority Board</h1>
+        <TaskForm/>
         </Container>
       </BoardWrapper>
     </>
