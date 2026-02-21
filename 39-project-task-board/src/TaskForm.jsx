@@ -1,11 +1,11 @@
-import styled from 'styled-components'
-const TaskForm = () => {
-    const FormCard = styled.div`
+import styled from 'styled-components';
+const FormCard = styled.div`
       border:2px solid black;
       width:300px;
       padding:20px;
       border-radius:5px;
-    `
+`
+const TaskForm = () => {
     return (
         <FormCard>
             <form>
