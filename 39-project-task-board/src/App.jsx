@@ -8,11 +8,13 @@ function App() {
      <h1>Task Priorty Board</h1>
      <form>
       <input type='text' placeholder='Enter you Task'></input>
+      <br/><br/>
       <select>
         <option>Low</option>
         <option>Medium</option>
         <option>High</option>
       </select>
+      <br/><br/>
       <button>Add Task</button>
      </form>
     </>
