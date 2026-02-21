@@ -3,21 +3,26 @@ import TaskForm from './TaskForm'
 import ShowCard from './ShowTaskCard'
 import styled from 'styled-components'
 
-const BoardWrapper = styled.div`
-  max-width: 1200px;
+export const BoardWrapper = styled.div`
   min-height: 100vh;
-  margin: 0 auto;
-  padding: 20px;
   background: #f4f6f8;
-  display:flex;
-  align-items:center;
-`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Container = styled.div`
+  width: 100%;
+  max-width: 1100px;
+  padding: 40px 20px;
+`;
 
 function App() {
   return (
     <>
       <BoardWrapper>
+        <Container>
         <h1>Task Priority Board</h1>
+        </Container>
       </BoardWrapper>
     </>
   )
