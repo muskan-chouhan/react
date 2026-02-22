@@ -1,4 +1,11 @@
 const ShowCard = () => {
+    const Container = styled.div`
+      width: 350px;
+      padding: 24px;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    `
     return (
             <div>
                 <h1>Task Card</h1>
