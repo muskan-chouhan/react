@@ -4,7 +4,7 @@ const ShowCard = () => {
       padding: 24px;
       border-radius: 8px;
       background: white;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border:2pxx solid black;
     `
     return (
             <div>
