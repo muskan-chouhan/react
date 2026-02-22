@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 const ShowCard = () => {
     const Container = styled.div`
       width: 350px;
