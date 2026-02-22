@@ -9,8 +9,8 @@ import styled from 'styled-components'
 const ShowCard = () => {
     return (
             <Container>
-                <h1>My Task</h1>
-                <h2>Data</h2>
+                <h1>Task Card</h1>
+                <h2>My Task</h2>
                 <h2>Low</h2><span></span>
             </Container>
   
