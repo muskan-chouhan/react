@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-const ShowCard = () => {
     const Container = styled.div`
       width: 350px;
       padding: 24px;
@@ -7,6 +6,7 @@ const ShowCard = () => {
       background: white;
       border:2px solid black;
     `
+const ShowCard = () => {
     return (
             <div>
                 <h1>Task Card</h1>
