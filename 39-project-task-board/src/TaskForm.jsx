@@ -1,21 +1,21 @@
 import styled from 'styled-components'
 
 const FormCard = styled.div`
-  width: 350px;
+  width: 100%;
   padding: 24px;
-  border-radius: 8px;
+  border-radius: 10px;
   background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-`
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+`;
 
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 16px;
-`
+`;
 
 const Input = styled.input`
-  padding: 10px 12px;
+  padding: 12px;
   border-radius: 6px;
   border: 1px solid #ddd;
   font-size: 14px;
@@ -24,10 +24,10 @@ const Input = styled.input`
     outline: none;
     border-color: #4f46e5;
   }
-`
+`;
 
 const Select = styled.select`
-  padding: 10px 12px;
+  padding: 12px;
   border-radius: 6px;
   border: 1px solid #ddd;
   font-size: 14px;
@@ -36,10 +36,10 @@ const Select = styled.select`
     outline: none;
     border-color: #4f46e5;
   }
-`
+`;
 
 const Button = styled.button`
-  padding: 10px 12px;
+  padding: 12px;
   border-radius: 6px;
   border: none;
   background: #4f46e5;
@@ -51,7 +51,7 @@ const Button = styled.button`
   &:hover {
     background: #4338ca;
   }
-`
+`;
 
 const TaskForm = () => {
   return (
@@ -59,9 +59,9 @@ const TaskForm = () => {
       <StyledForm>
         <Input type="text" placeholder="Enter your task" />
         <Select>
-          <option value="low">Low</option>
-          <option value="medium">Medium</option>
-          <option value="high">High</option>
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
         </Select>
         <Button>Add Task</Button>
       </StyledForm>
