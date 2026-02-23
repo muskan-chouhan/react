@@ -55,13 +55,14 @@ const Button = styled.button`
 `;
 
 
-const TaskForm = () => {
+const TaskForm = ({addGetFun}) => {
   const [task, setTask] = useState('');
   const [priority, setPriority] = useState('Low');
   const handleClick = () =>{
        event.preventDefault(); 
-      // console.log(task)
-      // console.log(priority);   
+       // console.log(task)
+       // console.log(priority);  
+       addGetFun(task,priority) 
   }
 
 

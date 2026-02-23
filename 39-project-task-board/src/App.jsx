@@ -2,6 +2,7 @@ import TaskForm from './TaskForm'
 import ShowCard from './ShowTaskCard'
 import styled from 'styled-components'
 
+
 const BoardWrapper = styled.div`
   min-height: 100vh;
   background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
@@ -32,14 +33,18 @@ const Content = styled.div`
 `;
 
 function App() {
-  
+  const onhandel=(getTask,getPriorty)=>{
+    console.log(getTask);
+    console.log(getPriorty);
+    
+  }
   return (
     <BoardWrapper>
       <Container>
         <Heading>Task Priority Board</Heading>
 
         <Content>
-          <TaskForm />
+          <TaskForm addGetFun={onhandel}/>
           <ShowCard />
         </Content>
 
