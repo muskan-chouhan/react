@@ -19,6 +19,7 @@ const Heading = styled.h1`
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
+  text-align: center;   // 👈 add this
   color: #222;
 `;
 
