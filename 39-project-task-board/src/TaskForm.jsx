@@ -57,7 +57,7 @@ const Button = styled.button`
 
 const TaskForm = () => {
   const [task, setTask] = useState('');
-  const [priorty, setPriorty] = useState('Low');
+  const [priority, setPriority] = useState('Low');
 
   //  console.log(task);
 
@@ -71,8 +71,8 @@ const TaskForm = () => {
           onChange={(event) => setTask(event.target.value)}
         />
         <Select 
-        onChange={(event) => setPriorty(event.target.value)} 
-        value={priorty} >
+        onChange={(event) => setPriority(event.target.value)} 
+        value={priority} >
           <option>Low</option>
           <option>Medium</option>
           <option>High</option>
