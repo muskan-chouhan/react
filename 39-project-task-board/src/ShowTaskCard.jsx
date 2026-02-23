@@ -5,12 +5,12 @@ const TaskCard = styled.div`
   padding: 20px;
   border-radius: 10px;
   background: white;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
   transition: 0.2s ease;
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
   }
 `;
 
@@ -21,9 +21,9 @@ const CardHeader = styled.div`
 `;
 
 const Title = styled.h3`
+  margin: 0;
   font-size: 16px;
   font-weight: 600;
-  margin: 0;
   color: #333;
 `;
 
