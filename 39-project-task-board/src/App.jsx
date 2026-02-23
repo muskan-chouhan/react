@@ -1,6 +1,7 @@
 import TaskForm from './TaskForm'
 import ShowCard from './ShowTaskCard'
 import styled from 'styled-components'
+import { useState } from 'react';
 
 
 const BoardWrapper = styled.div`
@@ -30,13 +31,16 @@ const Content = styled.div`
   flex-direction: column;
   gap: 25px;
   max-width: 400px;
+  margin: 0 auto;
 `;
 
 function App() {
+
+  const [taskArr,setTaskArr] =useState([])
   const onhandel=(getTask,getPriorty)=>{
-    console.log(getTask);
-    console.log(getPriorty);
-    
+     setTaskArr([...taskArr,{task:getTask,priority:getPriorty}])
+    //console.log(getTask);
+    // console.log(getPriorty);
   }
   return (
     <BoardWrapper>
@@ -45,7 +49,12 @@ function App() {
 
         <Content>
           <TaskForm addGetFun={onhandel}/>
-          <ShowCard />
+          {
+            taskArr.map((data,index)=>(
+              <ShowCard key={index} task={task} priority={priority}/>
+            ))
+          }
+           
         </Content>
 
       </Container>
