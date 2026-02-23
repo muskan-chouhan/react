@@ -58,7 +58,7 @@ const Button = styled.button`
 const TaskForm = ({addGetFun}) => {
   const [task, setTask] = useState('');
   const [priority, setPriority] = useState('Low');
-  const handleClick = () =>{
+  const handleClick = (event) =>{
        event.preventDefault(); 
        // console.log(task)
        // console.log(priority);  
@@ -68,7 +68,7 @@ const TaskForm = ({addGetFun}) => {
 
   return (
     <FormCard>
-      <StyledForm>
+      <StyledForm onSubmit={handleClick}>
         <Input
           type="text"
           placeholder="Enter your task"
@@ -82,7 +82,7 @@ const TaskForm = ({addGetFun}) => {
           <option>Medium</option>
           <option>High</option>
         </Select>
-        <Button onClick={handleClick}>Add Task</Button>
+        <Button type='submit'>Add Task</Button>
       </StyledForm>
     </FormCard>
   )
