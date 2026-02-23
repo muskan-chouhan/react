@@ -58,8 +58,12 @@ const Button = styled.button`
 const TaskForm = () => {
   const [task, setTask] = useState('');
   const [priority, setPriority] = useState('Low');
+  const handleClick = () =>{
+       event.preventDefault(); 
+      // console.log(task)
+      // console.log(priority);   
+  }
 
-  //  console.log(task);
 
   return (
     <FormCard>
@@ -77,7 +81,7 @@ const TaskForm = () => {
           <option>Medium</option>
           <option>High</option>
         </Select>
-        <Button>Add Task</Button>
+        <Button onClick={handleClick}>Add Task</Button>
       </StyledForm>
     </FormCard>
   )
