@@ -4,9 +4,10 @@ import styled from 'styled-components'
 
 const BoardWrapper = styled.div`
   min-height: 100vh;
- background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
+  background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 `;
 
 const Container = styled.div`
@@ -31,6 +32,7 @@ const Content = styled.div`
 `;
 
 function App() {
+  
   return (
     <BoardWrapper>
       <Container>

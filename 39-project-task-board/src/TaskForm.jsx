@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components'
 
 const FormCard = styled.div`
@@ -53,17 +54,23 @@ const Button = styled.button`
   }
 `;
 
+
 const TaskForm = () => {
+   const[task,setTask] = useState('');
+   const[priorty,setPriorty] =useState();
+
+  //  console.log(task);
+   
   return (
     <FormCard>
       <StyledForm>
-        <Input type="text" placeholder="Enter your task" />
-        <Select>
+        <Input type="text" placeholder="Enter your task" value={task} onChange={(event)=>setTask(event.target.value)}/>
+        <Select onChange={(event)=>setPriorty(event.target.value)} value={priorty} >
           <option>Low</option>
           <option>Medium</option>
           <option>High</option>
         </Select>
-        <Button>Add Task</Button>
+        <Button>Add Task</Button>        
       </StyledForm>
     </FormCard>
   )
