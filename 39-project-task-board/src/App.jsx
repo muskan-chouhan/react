@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const BoardWrapper = styled.div`
   min-height: 100vh;
-  background: #f4f6f8;
+ background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
   display: flex;
   justify-content: center;
 `;
@@ -27,6 +27,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 25px;
+  max-width: 400px;
 `;
 
 function App() {
