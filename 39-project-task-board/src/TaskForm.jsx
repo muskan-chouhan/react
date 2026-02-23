@@ -57,7 +57,7 @@ const Button = styled.button`
 
 const TaskForm = () => {
   const [task, setTask] = useState('');
-  const [priorty, setPriorty] = useState();
+  const [priorty, setPriorty] = useState('Low');
 
   //  console.log(task);
 
