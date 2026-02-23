@@ -42,12 +42,12 @@ const Meta = styled.p`
   margin-top: 10px;
 `;
 
-const ShowCard = () => {
+const ShowCard = ({task,priority}) => {
   return (
     <TaskCard>
       <CardHeader>
-        <Title>My First Task</Title>
-        <PriorityBadge>Low</PriorityBadge>
+        <Title>{task}</Title>
+        <PriorityBadge>{priority}</PriorityBadge>
       </CardHeader>
 
       <Meta>Created just now</Meta>

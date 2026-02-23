@@ -51,7 +51,7 @@ function App() {
           <TaskForm addGetFun={onhandel}/>
           {
             taskArr.map((data,index)=>(
-              <ShowCard key={index} task={task} priority={priority}/>
+              <ShowCard key={index} task={data.task} priority={data.priority}/>
             ))
           }
            
