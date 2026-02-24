@@ -19,7 +19,6 @@ const Input = styled.input`
   
   padding: 12px;
   border-radius: 6px;
-  border: 1px solid #ddd;
   font-size: 14px;
   border: ${({ hasError }) =>
   hasError ? "2px solid red" : "1px solid #ddd"};
@@ -65,7 +64,7 @@ const Button = styled.button`
 const TaskForm = ({addGetFun}) => {
   const [task, setTask] = useState('');
   const [priority, setPriority] = useState('');
-  const [error,setErr] = useState()
+  const [error,setErr] = useState('')
 
   const handleClick = (event) =>{
        event.preventDefault();  
