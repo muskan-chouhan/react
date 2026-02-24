@@ -21,7 +21,7 @@ const Input = styled.input`
   border-radius: 6px;
   font-size: 14px;
   border: ${({ hasError }) =>
-  hasError ? "2px solid red" : "1px solid #ddd"};
+    hasError ? "2px solid red" : "1px solid #ddd"};
   &:focus {
     outline: none;
     border-color: #4f46e5;
@@ -61,22 +61,23 @@ const Button = styled.button`
 `;
 
 
-const TaskForm = ({addGetFun}) => {
+const TaskForm = ({ addGetFun }) => {
   const [task, setTask] = useState('');
   const [priority, setPriority] = useState('');
-  const [error,setErr] = useState('')
+  const [error, setErr] = useState('')
 
-  const handleClick = (event) =>{
-       event.preventDefault();  
-       const trimmedTask = task.trim()
-       if(trimmedTask === ""){
-        setErr("Please enter task")
-       }else{
-       addGetFun(trimmedTask,priority)
-       setErr("") 
-       setTask("")
-       setPriority("")
-       }
+  const handleClick = (event) => {
+    event.preventDefault();
+    const trimmedTask = task.trim()
+    if (trimmedTask === "") {
+      setErr("Please enter task")
+    } else {
+      addGetFun(trimmedTask, priority)
+      setErr("")
+      setTask("")
+      setPriority("")
+      setErr('')
+    }
 
   }
 
@@ -88,14 +89,19 @@ const TaskForm = ({addGetFun}) => {
           type="text"
           placeholder="Enter your task"
           value={task}
-          onChange={(event) => setTask(event.target.value)}
+          onChange={(event) => {
+            setTask(event.target.value);
+            if (error) {
+              setErr("");
+            }
+          }}
           hasError={error}
         />
-        { error && <ErrorText>{error}</ErrorText> }
+        {error && <ErrorText>{error}</ErrorText>}
 
-        <Select 
-        onChange={(event) => setPriority(event.target.value)} 
-         value={priority} >
+        <Select
+          onChange={(event) => setPriority(event.target.value)}
+          value={priority} >
           <option value="">Select Priority</option>
           <option>Low</option>
           <option>Medium</option>
