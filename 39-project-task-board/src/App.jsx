@@ -41,7 +41,6 @@ function App() {
      setTaskArr([...taskArr,{task:getTask,priority:getPriorty}])
     //console.log(getTask);
     // console.log(getPriorty);
-
   }
   return (
     <BoardWrapper>

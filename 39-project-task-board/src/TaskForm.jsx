@@ -26,6 +26,10 @@ const Input = styled.input`
     border-color: #4f46e5;
   }
 `;
+const ErrorText = styled.span`
+background: white;
+color:red;
+`
 
 const Select = styled.select`
   padding: 12px;
@@ -63,10 +67,10 @@ const TaskForm = ({addGetFun}) => {
   const handleClick = (event) =>{
        event.preventDefault();  
        const trimmedTask = task.trim()
-       if(task==""){
-      alert('rong')
+       if(trimmedTask == ""){
+        setErr("Please enter task")
        }else{
-       addGetFun(task,priority) 
+       addGetFun(tatrimmedTasksk,priority) 
        setTask("")
        setPriority("")
        }
@@ -83,7 +87,7 @@ const TaskForm = ({addGetFun}) => {
           value={task}
           onChange={(event) => setTask(event.target.value)}
         />
-        { error && <ErrorText>Message</ErrorText> }
+        { error && <ErrorText><span>{error}</span></ErrorText> }
 
         <Select 
         onChange={(event) => setPriority(event.target.value)} 
