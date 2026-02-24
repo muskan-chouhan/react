@@ -61,9 +61,8 @@ const TaskForm = ({addGetFun}) => {
   const [error,setErr] = useState()
 
   const handleClick = (event) =>{
-       event.preventDefault(); 
-       // console.log(task)
-       // console.log(priority);  
+       event.preventDefault();  
+       const trimmedTask = task.trim()
        if(task==""){
       alert('rong')
        }else{
