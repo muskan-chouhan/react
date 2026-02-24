@@ -21,7 +21,8 @@ const Input = styled.input`
   border-radius: 6px;
   border: 1px solid #ddd;
   font-size: 14px;
-border: ${props => props.hasError ? "2px solid red" : "1px solid #ddd"};
+  border: ${({ hasError }) =>
+  hasError ? "2px solid red" : "1px solid #ddd"};
   &:focus {
     outline: none;
     border-color: #4f46e5;
