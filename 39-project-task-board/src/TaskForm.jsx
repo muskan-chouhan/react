@@ -101,7 +101,8 @@ const TaskForm = ({ addGetFun }) => {
 
         <Select
           onChange={(event) => setPriority(event.target.value)}
-          value={priority} >
+          value={priority} 
+          >
           <option value="">Select Priority</option>
           <option>Low</option>
           <option>Medium</option>
