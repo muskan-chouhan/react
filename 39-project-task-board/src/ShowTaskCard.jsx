@@ -56,7 +56,7 @@ const Meta = styled.p`
 
 const ShowCard = ({ task, priority }) => {
   return (
-    <TaskCard>
+    <TaskCard priority={priority}>
       <CardHeader>
         <Title>{task}</Title>
         <PriorityBadge priority={priority}>
