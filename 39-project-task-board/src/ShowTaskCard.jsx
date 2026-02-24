@@ -8,6 +8,14 @@ const TaskCard = styled.div`
   box-shadow: 0 3px 10px rgba(0,0,0,0.06);
   transition: 0.2s ease;
 
+  border-left: 6px solid
+    ${({ priority }) =>
+      priority === "High"
+        ? "#d32f2f"
+        : priority === "Medium"
+        ? "#ed6c02"
+        : "#1b7a3c"};
+
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.08);
