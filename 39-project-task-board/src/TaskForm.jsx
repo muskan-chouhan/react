@@ -84,10 +84,12 @@ const TaskForm = ({addGetFun}) => {
           value={task}
           onChange={(event) => setTask(event.target.value)}
         />
+        { error && <ErrorText>Message</ErrorText> }
 
         <Select 
         onChange={(event) => setPriority(event.target.value)} 
          value={priority} >
+          <option value="">Select Priority</option>
           <option>Low</option>
           <option>Medium</option>
           <option>High</option>
