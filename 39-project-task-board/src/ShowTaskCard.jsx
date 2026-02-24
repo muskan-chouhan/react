@@ -32,8 +32,13 @@ const PriorityBadge = styled.span`
   font-size: 12px;
   font-weight: 500;
   border-radius: 20px;
-  background: #e6f9ec;
-  color: #1b7a3c;
+  color: #e6f9ec;
+ background: ${({ priority }) =>
+  priority === "High"
+    ? "red"
+    : priority === "Medium"
+    ? "orange"
+    : "green"};
 `;
 
 const Meta = styled.p`
@@ -42,12 +47,14 @@ const Meta = styled.p`
   margin-top: 10px;
 `;
 
-const ShowCard = ({task,priority}) => {
+const ShowCard = ({ task, priority }) => {
   return (
     <TaskCard>
       <CardHeader>
         <Title>{task}</Title>
-        <PriorityBadge>{priority}</PriorityBadge>
+        <PriorityBadge priority={priority}>
+          {priority}
+        </PriorityBadge>
       </CardHeader>
 
       <Meta>Created just now</Meta>
