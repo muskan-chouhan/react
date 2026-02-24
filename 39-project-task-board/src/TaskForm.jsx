@@ -67,7 +67,7 @@ const TaskForm = ({addGetFun}) => {
   const handleClick = (event) =>{
        event.preventDefault();  
        const trimmedTask = task.trim()
-       if(trimmedTask == ""){
+       if(trimmedTask === ""){
         setErr("Please enter task")
        }else{
        addGetFun(trimmedTask,priority)
@@ -88,7 +88,7 @@ const TaskForm = ({addGetFun}) => {
           value={task}
           onChange={(event) => setTask(event.target.value)}
         />
-        { error && <ErrorText><span>{error}</span></ErrorText> }
+        { error && <ErrorText>{error}</ErrorText> }
 
         <Select 
         onChange={(event) => setPriority(event.target.value)} 
