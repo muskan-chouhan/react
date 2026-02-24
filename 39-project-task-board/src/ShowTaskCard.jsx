@@ -30,15 +30,22 @@ const Title = styled.h3`
 const PriorityBadge = styled.span`
   padding: 4px 12px;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 20px;
-  color: #e6f9ec;
- background: ${({ priority }) =>
-  priority === "High"
-    ? "red"
-    : priority === "Medium"
-    ? "orange"
-    : "green"};
+
+  background: ${({ priority }) =>
+    priority === "High"
+      ? "#ffe5e5"
+      : priority === "Medium"
+      ? "#fff4e5"
+      : "#e6f9ec"};
+
+  color: ${({ priority }) =>
+    priority === "High"
+      ? "#d32f2f"
+      : priority === "Medium"
+      ? "#ed6c02"
+      : "#1b7a3c"};
 `;
 
 const Meta = styled.p`
