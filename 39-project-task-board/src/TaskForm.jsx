@@ -16,16 +16,18 @@ const StyledForm = styled.form`
 `;
 
 const Input = styled.input`
+  
   padding: 12px;
   border-radius: 6px;
   border: 1px solid #ddd;
   font-size: 14px;
-
+border: ${props => props.hasError ? "2px solid red" : "1px solid #ddd"};
   &:focus {
     outline: none;
     border-color: #4f46e5;
   }
 `;
+
 const ErrorText = styled.span`
 background: white;
 color:red;
@@ -87,6 +89,7 @@ const TaskForm = ({addGetFun}) => {
           placeholder="Enter your task"
           value={task}
           onChange={(event) => setTask(event.target.value)}
+          hasError={error}
         />
         { error && <ErrorText>{error}</ErrorText> }
 
