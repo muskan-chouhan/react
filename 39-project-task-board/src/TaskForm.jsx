@@ -57,14 +57,20 @@ const Button = styled.button`
 
 const TaskForm = ({addGetFun}) => {
   const [task, setTask] = useState('');
-  const [priority, setPriority] = useState('Low');
+  const [priority, setPriority] = useState('');
 
   const handleClick = (event) =>{
        event.preventDefault(); 
        // console.log(task)
        // console.log(priority);  
+       if(task==""){
+        alert('rong')
+       }else{
        addGetFun(task,priority) 
        setTask("")
+       setPriority("")
+       }
+
   }
 
 
@@ -79,7 +85,7 @@ const TaskForm = ({addGetFun}) => {
         />
         <Select 
         onChange={(event) => setPriority(event.target.value)} 
-        value={priority} >
+         value={priority} >
           <option>Low</option>
           <option>Medium</option>
           <option>High</option>
