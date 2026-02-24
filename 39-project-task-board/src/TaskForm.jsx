@@ -70,7 +70,8 @@ const TaskForm = ({addGetFun}) => {
        if(trimmedTask == ""){
         setErr("Please enter task")
        }else{
-       addGetFun(tatrimmedTasksk,priority) 
+       addGetFun(trimmedTask,priority)
+       setErr("") 
        setTask("")
        setPriority("")
        }
