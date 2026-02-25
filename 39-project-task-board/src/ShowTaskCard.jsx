@@ -1,79 +1,81 @@
 import styled from "styled-components";
 
-const TaskCard = styled.div`
-  width: 100%;
-  padding: 20px;
+const Card = styled.div`
+  padding: 18px;
   border-radius: 10px;
   background: white;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-  transition: 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  min-height: 105px;
 
-  border-left: 6px solid
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-top: 4px solid
     ${({ priority }) =>
       priority === "High"
-        ? "#d32f2f"
+        ? "#ef4444"
         : priority === "Medium"
-        ? "#ed6c02"
-        : "#1b7a3c"};
+        ? "#f59e0b"
+        : "#10b981"};
+
+  transition: 0.2s ease;
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
   }
 `;
 
-const CardHeader = styled.div`
+const Title = styled.h3`
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+`;
+
+const Footer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
-const Title = styled.h3`
-  margin: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
+const Meta = styled.span`
+  font-size: 12px;
+  color: #9ca3af;
 `;
 
-const PriorityBadge = styled.span`
-  padding: 4px 12px;
-  font-size: 12px;
+const Badge = styled.span`
+  padding: 4px 10px;
+  font-size: 11px;
   font-weight: 600;
   border-radius: 20px;
 
   background: ${({ priority }) =>
     priority === "High"
-      ? "#ffe5e5"
+      ? "#fee2e2"
       : priority === "Medium"
-      ? "#fff4e5"
-      : "#e6f9ec"};
+      ? "#fef3c7"
+      : "#d1fae5"};
 
   color: ${({ priority }) =>
     priority === "High"
-      ? "#d32f2f"
+      ? "#b91c1c"
       : priority === "Medium"
-      ? "#ed6c02"
-      : "#1b7a3c"};
-`;
-
-const Meta = styled.p`
-  font-size: 13px;
-  color: #777;
-  margin-top: 10px;
+      ? "#b45309"
+      : "#065f46"};
 `;
 
 const ShowCard = ({ task, priority }) => {
   return (
-    <TaskCard priority={priority}>
-      <CardHeader>
-        <Title>{task}</Title>
-        <PriorityBadge priority={priority}>
-          {priority}
-        </PriorityBadge>
-      </CardHeader>
+    <Card priority={priority}>
+      <Title>{task}</Title>
 
-      <Meta>Created just now</Meta>
-    </TaskCard>
+      <Footer>
+        <Meta>Created just now</Meta>
+        <Badge priority={priority}>{priority}</Badge>
+      </Footer>
+    </Card>
   );
 };
 

@@ -1,116 +1,107 @@
 import { useState } from 'react';
 import styled from 'styled-components'
 
-const FormCard = styled.div`
-  width: 100%;
-  padding: 24px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-`;
-
-const StyledForm = styled.form`
+const Form = styled.form`
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 `;
 
 const Input = styled.input`
-  
-  padding: 12px;
+  flex: 2;
+  padding: 11px;
   border-radius: 6px;
+  border: 1px solid ${({ hasError }) => hasError ? "#ef4444" : "#d1d5db"};
   font-size: 14px;
-  border: ${({ hasError }) =>
-    hasError ? "2px solid red" : "1px solid #ddd"};
+
   &:focus {
     outline: none;
-    border-color: #4f46e5;
+    border-color: #6366f1;
   }
 `;
 
-const ErrorText = styled.span`
-background: white;
-color:red;
-`
-
 const Select = styled.select`
-  padding: 12px;
+  flex: 1;
+  padding: 11px;
   border-radius: 6px;
-  border: 1px solid #ddd;
+  border: 1px solid #d1d5db;
   font-size: 14px;
 
   &:focus {
     outline: none;
-    border-color: #4f46e5;
+    border-color: #6366f1;
   }
 `;
 
 const Button = styled.button`
-  padding: 12px;
+  padding: 11px 18px;
   border-radius: 6px;
   border: none;
-  background: #4f46e5;
+  background: #6366f1;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.2s ease;
 
   &:hover {
-    background: #4338ca;
+    background: #4f46e5;
   }
 `;
 
+const Error = styled.span`
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 6px;
+  display: block;
+`;
 
 const TaskForm = ({ addGetFun }) => {
+
   const [task, setTask] = useState('');
   const [priority, setPriority] = useState('');
-  const [error, setErr] = useState('')
+  const [error, setErr] = useState("");
 
-  const handleClick = (event) => {
-    event.preventDefault();
-    const trimmedTask = task.trim()
-    if (trimmedTask === "") {
-      setErr("Please enter task")
-    } else {
-      addGetFun(trimmedTask, priority)
-      setErr("")
-      setTask("")
-      setPriority("")
-      setErr('')
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const trimmed = task.trim();
+
+    if (trimmed === "") {
+      setErr("Task is required");
+      return;
     }
 
+    setErr("");
+    addGetFun(trimmed, priority);
+    setTask("");
+    setPriority("");
   }
 
-
   return (
-    <FormCard>
-      <StyledForm onSubmit={handleClick}>
+    <>
+      <Form onSubmit={handleSubmit}>
         <Input
-          type="text"
-          placeholder="Enter your task"
+          placeholder="Enter task..."
           value={task}
-          onChange={(event) => {
-            setTask(event.target.value);
-            if (error) {
-              setErr("");
-            }
-          }}
           hasError={error}
+          onChange={(e) => {
+            setTask(e.target.value);
+            if (error) setErr("");
+          }}
         />
-        {error && <ErrorText>{error}</ErrorText>}
 
         <Select
-          onChange={(event) => setPriority(event.target.value)}
-          value={priority} 
-          >
-          <option value="">Select Priority</option>
+          value={priority}
+          onChange={(e) => setPriority(e.target.value)}
+        >
+          <option value="">Priority</option>
           <option>Low</option>
           <option>Medium</option>
           <option>High</option>
         </Select>
-        <Button type='submit'>Add Task</Button>
-      </StyledForm>
-    </FormCard>
+
+        <Button type="submit">Add</Button>
+      </Form>
+
+      {error && <Error>{error}</Error>}
+    </>
   )
 }
 
