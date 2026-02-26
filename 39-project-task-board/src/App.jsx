@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { useState } from 'react';
 
 const Page = styled.div`
-  min-height: 300vh;
+  min-height: 100vh;
   background: #f3f4f6;
   padding: 50px 20px;
 `;
