@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 const Heading = styled.h1`
   font-size: 26px;
   font-weight: 700;
-  color: #111827;
+  color: #051c49;
   margin-bottom: 35px;
 `;
 
@@ -51,7 +51,7 @@ function App() {
     <Page>
       <Wrapper>
 
-        <Heading>Task Priority Board</Heading>
+        <Heading>Porject Task Priority Board</Heading>
 
         <FormWrapper>
           <TaskForm addGetFun={onhandel} />
