@@ -31,7 +31,7 @@ const Title = styled.h3`
   margin: 0;
   font-size: 15px;
   font-weight: 600;
-  color: #111827;
+  color: #081124;
 `;
 
 const Footer = styled.div`
@@ -76,7 +76,8 @@ const ShowCard = ({ task, priority }) => {
         <Badge priority={priority}>{priority}</Badge>
       </Footer>
     </Card>
-  );
+  ); 
+  
 };
 
-export default ShowCard;
+export default ShowCard;      

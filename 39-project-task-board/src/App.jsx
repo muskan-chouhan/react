@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const Page = styled.div`
   min-height: 100vh;
-  background: #f3f4f6;
+  background: #d6d8de;
   padding: 50px 20px;
 `;
 
