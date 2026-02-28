@@ -16,7 +16,7 @@ const Card = styled.div`
       priority === "High"
         ? "#ef4444"
         : priority === "Medium"
-        ? "#f59e0b"
+        ? "#f9a30d"
         : "#10b981"};
 
   transition: 0.2s ease;
@@ -31,7 +31,7 @@ const Title = styled.h3`
   margin: 0;
   font-size: 15px;
   font-weight: 600;
-  color: #081124;
+  color: #071228;
 `;
 
 const Footer = styled.div`
