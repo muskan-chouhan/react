@@ -36,7 +36,7 @@ const Button = styled.button`
   padding: 11px 18px;
   border-radius: 6px;
   border: none;
-  background: #6366f1;
+  background: #787afc;
   color: white;
   font-weight: 600;
   cursor: pointer;
