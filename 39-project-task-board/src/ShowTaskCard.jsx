@@ -4,7 +4,7 @@ const Card = styled.div`
   padding: 18px;
   border-radius: 10px;
   background: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(27, 6, 6, 0.05);
   min-height: 105px;
 
   display: flex;
