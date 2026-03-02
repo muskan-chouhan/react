@@ -47,7 +47,7 @@ const Button = styled.button`
 `;
 
 const Error = styled.span`
-  color: #de2c2c;
+  color: #e23939;
   font-size: 12px;
   margin-top: 6px;
   display: block;
