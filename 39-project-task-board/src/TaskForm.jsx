@@ -10,13 +10,13 @@ const Input = styled.input`
   flex: 2;
   padding: 11px;
   border-radius: 6px;
-  border: 1px solid ${({ hasError }) => hasError ? "#ef4444" : "#d1d5db"};
+  border: 1px solid ${({ hasError }) => hasError ? "#e63f3f" : "#d1d5db"};
   font-size: 14px;
 
   &:focus {
     outline: none;
     border-color: #6366f1;
-  }
+  }  
 `;
 
 const Select = styled.select`
@@ -42,12 +42,12 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: #4f46e5;
+    background: #5149eb;
   }
 `;
 
 const Error = styled.span`
-  color: #e23939;
+  color: #dc3939;
   font-size: 12px;
   margin-top: 6px;
   display: block;
@@ -105,4 +105,11 @@ const TaskForm = ({ addGetFun }) => {
   )
 }
 
-export default TaskForm
+export default TaskForm   
+
+
+
+      
+
+
+
