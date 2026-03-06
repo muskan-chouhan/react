@@ -15,7 +15,7 @@ const Input = styled.input`
 
   &:focus {
     outline: none;
-    border-color: #6366f1;
+    border-color: #6264f4;
   }  
 `;
 
