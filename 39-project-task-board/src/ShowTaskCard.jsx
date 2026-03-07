@@ -17,7 +17,7 @@ const Card = styled.div`
         ? "#ef4444"
         : priority === "Medium"
         ? "#f9a30d"
-        : "#10b981"};
+        : "#0fb880"};
 
   transition: 0.2s ease;
 
