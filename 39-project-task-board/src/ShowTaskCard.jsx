@@ -4,7 +4,7 @@ const Card = styled.div`
   padding: 18px;
   border-radius: 10px;
   background: white;
-  box-shadow: 0 4px 12px rgba(13, 3, 3, 0.05);
+  box-shadow: 0 4px 12px rgba(20, 4, 4, 0.05);
   min-height: 105px;
 
   display: flex;
@@ -17,6 +17,7 @@ const Card = styled.div`
         ? "#ef4444"
         : priority === "Medium"
         ? "#f9a30d"
+
         : "#0fb880"};
 
   transition: 0.2s ease;
