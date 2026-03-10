@@ -2,7 +2,8 @@ import { useState } from 'react'
 
 
 function App() {
-  const[name,setName] = useState("")
+  const[name,setName] = useState("Anya")
+
 
   return (
     <>
@@ -10,9 +11,9 @@ function App() {
     <input
     type='text'
     placeholder='Enter your name'
-    name={name}
+    onChange={(e)=>setName(e.target.value)}
     >
-
+    <button>Click</button>
     </input>
     </>
   )
