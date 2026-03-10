@@ -64,7 +64,7 @@ const Badge = styled.span`
       ? "#b91c1c"
       : priority === "Medium"
       ? "#b45309"
-      : "#065f46"};
+      : "#065c43"};
 `;
 
 const ShowCard = ({ task, priority }) => {
