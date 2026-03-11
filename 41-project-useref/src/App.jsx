@@ -3,15 +3,22 @@ import { useRef } from "react"
 
 function App() {
   const inputRef = useRef(null)
-  function addTask (){
-    console.log(inputRef.current.value)
+  const [tasks, setTasks] = useState([])
+
+  function addTask (){ 
+    const value = inputRef.current.value
+    if(value === ""){
+  alert("Please enter task")
+}
+  setTasks([...tasks,value])
+  inputRef.current.value = ""
   }
   return (
     <>
       <h1>Task Manger</h1>
       <input
         type='text'
-        placeholder='Enter your name'
+        placeholder='Enter Your Task'
         ref={inputRef}
       /> 
       
