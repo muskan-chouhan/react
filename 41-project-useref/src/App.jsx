@@ -1,9 +1,8 @@
 import { useState } from 'react'
-
+import { useRef } from "react"
 
 function App() {
-  const [name, setName] = useState("Anya")
-
+  const inputRef = useRef(null)
 
   return (
     <>
@@ -11,11 +10,9 @@ function App() {
       <input
         type='text'
         placeholder='Enter your name'
-        value={name}
-        onChange={(e) => setName(e.target.value)}
       /> 
       
-       <button>Click</button>
+       <button>Task Button</button>
     </>
   )
 }
