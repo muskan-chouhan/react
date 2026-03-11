@@ -2,19 +2,19 @@ import { useState } from 'react'
 
 
 function App() {
-  const[name,setName] = useState("Anya")
+  const [name, setName] = useState("Anya")
 
 
   return (
     <>
-    <h1>UseRef</h1>
-    <input
-    type='text'
-    placeholder='Enter your name'
-    onChange={(e)=>setName(e.target.value)}
-    >
-    <button>Click</button>
-    </input>
+      <h1>Task Manger</h1>
+      <input
+        type='text'
+        placeholder='Enter your name'
+        onChange={(e) => setName(e.target.value)}
+      > 
+      </input>
+       <button>Click</button>
     </>
   )
 }
