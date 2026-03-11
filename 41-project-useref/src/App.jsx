@@ -10,6 +10,7 @@ function App() {
       <input
         type='text'
         placeholder='Enter your name'
+        ref={inputRef}
       /> 
       
        <button>Task Button</button>
