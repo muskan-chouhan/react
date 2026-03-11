@@ -8,9 +8,11 @@ function App() {
   function addTask (){ 
     const value = inputRef.current.value
     if(value === ""){
-  alert("Please enter task")
+   alert("Please enter task")
+     return
 }
   setTasks([...tasks,value])
+  inputRef.current.focus()
   inputRef.current.value = ""
   }
   return (
@@ -21,8 +23,16 @@ function App() {
         placeholder='Enter Your Task'
         ref={inputRef}
       /> 
-      
        <button onClick={addTask}>Task Button</button>
+{
+  tasks.map((data,index) => (
+    <div key={index}>
+      <ul>
+        <li>{data}</li>
+      </ul>
+    </div>
+  ))
+}
     </>
   )
 }
