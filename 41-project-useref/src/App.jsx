@@ -3,7 +3,9 @@ import { useRef } from "react"
 
 function App() {
   const inputRef = useRef(null)
-
+  function handelInput (){
+    inputRef.current.value = '123'
+  }
   return (
     <>
       <h1>Task Manger</h1>
@@ -13,7 +15,7 @@ function App() {
         ref={inputRef}
       /> 
       
-       <button>Task Button</button>
+       <button onClick={handelInput}>Task Button</button>
     </>
   )
 }
