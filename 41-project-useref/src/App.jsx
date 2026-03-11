@@ -12,8 +12,8 @@ function App() {
         type='text'
         placeholder='Enter your name'
         onChange={(e) => setName(e.target.value)}
-      > 
-      </input>
+      /> 
+      
        <button>Click</button>
     </>
   )
