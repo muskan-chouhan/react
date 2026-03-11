@@ -11,7 +11,9 @@ function App() {
    alert("Please enter task")
      return
 }
-  setTasks([...tasks,value])
+  setTasks(function(prev){
+  return [...prev,value]
+})
   inputRef.current.focus()
   inputRef.current.value = ""
   }
@@ -25,13 +27,15 @@ function App() {
       /> 
        <button onClick={addTask}>Task Button</button>
 {
-  tasks.map((data,index) => (
-    <div key={index}>
-      <ul>
-        <li>{data}</li>
-      </ul>
-    </div>
-  ))
+  tasks.length === 0
+  ?
+  <h2>No tasks yet</h2>
+  :
+  <ul>
+    {tasks.map((data,index)=>(
+      <li key={index}>{data}</li>
+    ))}
+  </ul>
 }
     </>
   )
