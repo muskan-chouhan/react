@@ -1,6 +1,7 @@
+import { useFormStatus } from 'react-dom'
 const ContactForm = () => {
     return(
-        <div>
+      <>
         <input 
           type='text'
           placeholder='Enter Your Name'
@@ -12,9 +13,9 @@ const ContactForm = () => {
         <textarea
            placeholder='Enter Message'
         /><br/><br/>
-        <button type='submit'>Submit</button>
-   
-        </div>
+        <button type='submit' disabled = 'pending' >Submit</button>
+    </>
+        
     )
 }
 
