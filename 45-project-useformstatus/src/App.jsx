@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
 function App() {
 
 
@@ -18,10 +15,9 @@ function App() {
            placeholder='Enter Your email'   
         /><br/><br/>
         <textarea
-           type='text'
            placeholder='Enter Message'
         />
-        <button>Submit</button>
+        <button type='submit'>Submit</button>
       </form>
     </>
   )
