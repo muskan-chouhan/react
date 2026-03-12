@@ -9,8 +9,18 @@ function App() {
     console.log('submit');
 
   }
+  
+  return (
+    <>
+      <h1>UserFromSatatus Hook in recat js 19</h1>
+      <form action={handelSubmit}>
+        <CustomerForm />
+       </form>
+    </>
+  )
+}
 
-  function CustomerForm() {
+function CustomerForm() {
     const { pending } = useFormStatus();
     return (
       <>
@@ -27,15 +37,4 @@ function App() {
       </>
     )
   }
-  return (
-    <>
-      <h1>UserFromSatatus Hook in recat js 19</h1>
-      <form action={handelSubmit}>
-        <CustomerForm />
-
-      </form>
-    </>
-  )
-}
-
 export default App
