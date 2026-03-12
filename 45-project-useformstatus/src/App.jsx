@@ -1,23 +1,12 @@
 import { useState } from 'react'
+import ContactForm from './component/ContactForm'
 function App() {
-
 
   return (
     <>
-      <h1>UseFormStatus</h1>
+      <h1>UseFormStatus</h1> 
       <form action='#'>
-        <input 
-          type='text'
-          placeholder='Enter Your Name'
-        /><br/><br/>
-        <input
-           type='email'
-           placeholder='Enter Your email'   
-        /><br/><br/>
-        <textarea
-           placeholder='Enter Message'
-        />
-        <button type='submit'>Submit</button>
+        <ContactForm/>
       </form>
     </>
   )
