@@ -1,5 +1,7 @@
 import { useFormStatus } from 'react-dom'
 const ContactForm = () => {
+
+    const { pending } = useFormStatus();
     return(
       <>
         <input 
@@ -13,7 +15,8 @@ const ContactForm = () => {
         <textarea
            placeholder='Enter Message'
         /><br/><br/>
-        <button type='submit' disabled = 'pending' >Submit</button>
+        
+        <button type='submit' disabled = {pending} >{pending ? 'submitting...' : 'Submit'}</button>
     </>
         
     )
