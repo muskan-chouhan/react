@@ -6,15 +6,15 @@ function App() {
 
   const [search, setSearch] = useState("")
   const [filtered, setFiltered] = useState(products)
-function handleSearch (){
+function handleSearch (e){
    const value = e.target.value
     setSearch(value)   
     
     //filter
-    products.filter((item)=>{
-    return item.includes(value)
-    setFiltered(filteredProducts)
+    const filteredProducts = products.filter((item)=>{
+    return item.includes(value)   
 })
+setFiltered(filteredProducts);
 }
        
 
@@ -30,7 +30,7 @@ function handleSearch (){
         onChange={handleSearch}
       />
 
-      <ProductList items={filtered} search={search} />
+      <ProductList items={filtered} />
     </>
   )
 
