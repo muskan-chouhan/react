@@ -1,25 +1,30 @@
-import { useState } from "react"
+import { useState, useTransition } from "react"
 import ProductList from "./ProductList"
 import products from "./data"
-import { useTransition } from "react"
 
 function App() {
 
   const [search, setSearch] = useState("")
   const [filtered, setFiltered] = useState(products)
   const [isPending, startTransition] = useTransition()
-  
-  function handleSearch (e){
-   const value = e.target.value
-    setSearch(value)   
-    
-    //filter
-    const filteredProducts = products.filter((item)=>{
-    return item.includes(value)   
-})
-setFiltered(filteredProducts);
-}
-       
+
+  function handleSearch(e) {
+
+    const value = e.target.value
+    setSearch(value)
+
+    startTransition(() => {
+
+      const filteredProducts = products.filter((item) =>
+        item.toLowerCase().includes(value.toLowerCase())
+      )
+
+      setFiltered(filteredProducts)
+
+    })
+
+  }
+
   return (
     <>
       <h1>Product Search</h1>
@@ -31,14 +36,12 @@ setFiltered(filteredProducts);
         onChange={handleSearch}
       />
 
+      {isPending && <p>Loading...</p>}
+
       <ProductList items={filtered} />
     </>
   )
 
 }
 
-export default App;
-
-
-
-
+export default App
