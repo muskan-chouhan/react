@@ -7,7 +7,9 @@ function App() {
 
   const [search, setSearch] = useState("")
   const [filtered, setFiltered] = useState(products)
-function handleSearch (e){
+  const [isPending, startTransition] = useTransition()
+  
+  function handleSearch (e){
    const value = e.target.value
     setSearch(value)   
     
@@ -18,8 +20,6 @@ function handleSearch (e){
 setFiltered(filteredProducts);
 }
        
-
-   
   return (
     <>
       <h1>Product Search</h1>
