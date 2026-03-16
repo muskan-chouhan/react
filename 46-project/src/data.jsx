@@ -9,7 +9,8 @@ const products = [
   "oneplus 11",
   "oneplus charger",
   "oneplus buds",
-  "Vivo"
+  "Vivo",
+  "oppo"
 ]
 
 export default products
