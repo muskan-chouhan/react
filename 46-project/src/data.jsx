@@ -9,8 +9,8 @@ const products = [
   "oneplus 11",
   "oneplus charger",
   "oneplus buds",
-  "Vivo",
-  "oppo"
+  "Vivo"
+
 
 ]
 
