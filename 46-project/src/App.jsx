@@ -1,47 +1,24 @@
-import { useState, useTransition } from "react"
-import ProductList from "./ProductList"
-import products from "./data"
+import { useState } from "react"
 
 function App() {
-
-  const [search, setSearch] = useState("")
-  const [filtered, setFiltered] = useState(products)
-  const [isPending, startTransition] = useTransition()
-
-  function handleSearch(e) {
-
-    const value = e.target.value
-    setSearch(value)
-
-    startTransition(() => {
-
-      const filteredProducts = products.filter((item) =>
-        item.toLowerCase().includes(value.toLowerCase())
-      )
-
-      setFiltered(filteredProducts)
-
-    })
-
-  }
-
-  return (
-    <>
-      <h1>Product Search</h1>
-
-      <input
-        type="text"
+    const product = ["vivo",'oppo','realme']
+    const [search, setSearch] = useState("")
+    function handleSearch(e){
+        const value = e.target.value
+        setSearch(value)
+            
+    }
+    return (
+        <>
+        <h1>Product Search</h1>
+        <input
         placeholder="Search product..."
-        value={search}
         onChange={handleSearch}
-      />
+        />
+        <h1>{search}</h1>
+        </>  
 
-      {isPending && <p>Loading...</p>}
-
-      <ProductList items={filtered} />
-    </>
-  )
-
+    )
 }
 
-export default App
+export default App 
