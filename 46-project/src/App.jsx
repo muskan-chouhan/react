@@ -20,7 +20,11 @@ function App() {
         placeholder="Search product..."
         onChange={handleSearch}
         />
-        <h1>{filter}</h1>
+<ul>
+  {filter.map((item, index) => (
+    <li key={index}>{item}</li>
+  ))}
+</ul>
         </>  
 
     )
