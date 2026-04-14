@@ -1,14 +1,16 @@
 import { useState } from "react"
 
 function App() {
-    const product = ["vivo",'oppo','realme','voivo1']
-    const [search, setSearch] = useState("")
+    const product = ["vivo",'oppo','realme','vivo1']
+    const [filter,setFilter] = useState([])
+
     function handleSearch(e){
         const value = e.target.value
-        setSearch(value)
+        
         const filteredProducts = product.filter((item)=>{
            return item.includes(value)
         })
+        setFilter(filteredProducts)
             
     }   
     return (
@@ -18,7 +20,7 @@ function App() {
         placeholder="Search product..."
         onChange={handleSearch}
         />
-        {/* <h1>{search}</h1> */}
+        <h1>{filter}</h1>
         </>  
 
     )
