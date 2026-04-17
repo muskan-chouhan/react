@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 function App() {
-    const product = ["vivo",'oppo','realme','vivo1','oppo1','samsung','realme1']
+    const product = ["vivo",'oppo','realme','samsung','motorola''karbonn']
     const [filter,setFilter] = useState([])
 
     function handleSearch(e){
