@@ -1,8 +1,8 @@
 import { useState } from "react"
 
 function App() {
-    const product = ["vivo",'oppo','realme','samsung']
-    const [filter,setFilter] = useState([])
+    const product = ["vivo",'oppo','realme','samsung','vivo1','oppo1']
+    const [filter,setFilter] = useState(product)
 
     function handleSearch(e){
         const value = e.target.value
@@ -34,12 +34,7 @@ function App() {
 }
 
 export default App;
-
-
-
-
  
-
 
 
 
