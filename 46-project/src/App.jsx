@@ -5,17 +5,15 @@ function App() {
   const [filter, setFilter] = useState(product)
 
   function handleSearch(e) {
-    const value = e.target.value.toUpperCase()
-
-
+    const value = e.target.value.toUpperCase().trim()  
     const filteredProducts = product.filter((item) => {
       return item.toUpperCase().includes(value)
     })
     setFilter(filteredProducts)
-
+      
   }
 
-  return (
+  return (     
 
 
     <>
@@ -36,6 +34,11 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
 
 
 
