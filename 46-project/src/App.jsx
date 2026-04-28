@@ -13,10 +13,11 @@ function App() {
       
   }
 
+
   return (     
 
 
-    <>
+    <>   
       <h1>Product Search</h1>
       <input
         placeholder="Search product..."
@@ -34,6 +35,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
