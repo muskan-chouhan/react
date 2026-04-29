@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import { useTransition } from "react"
 function App() {
   const product = ["vivo", 'oppo', 'realme', 'samsung', 'vivo1', 'oppo1','motorola']
   const [filter, setFilter] = useState(product)
@@ -15,8 +15,6 @@ function App() {
 
 
   return (     
-
-
     <>   
       <h1>Product Search</h1>
       <input
