@@ -1,7 +1,7 @@
 import { useState, useTransition } from "react"
 
 function App() {
-  const product = ["vivo", 'oppo', 'realme', 'samsung', 'vivo1', 'oppo1']
+  const product = ["vivo", 'oppo', 'realme', 'samsung', 'vivo1', 'oppo2']
   const [filter, setFilter] = useState(product)
   const [isPending, startTransition] = useTransition()
 
@@ -27,7 +27,7 @@ function App() {
 
       {/* Loading UI */}
       {isPending && <p>Loading...</p>}
-
+ 
       <ul>
         {filter.map((item, index) => (
           <li key={index}>{item}</li>
