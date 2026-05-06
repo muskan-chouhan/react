@@ -1,7 +1,7 @@
 import { useState, useTransition } from "react"
 
 function App() {
-  const product = ["vivo", 'oppo', 'realme', 'samsung', 'vivo1', 'oppo2']
+  const product = ["vivo", 'oppo', 'realme', 'samsung', 'vivo1', 'oppo1]
   const [filter, setFilter] = useState(product)
   const [isPending, startTransition] = useTransition()
 
@@ -38,3 +38,8 @@ function App() {
 }
 
 export default App
+ 
+
+
+
+
