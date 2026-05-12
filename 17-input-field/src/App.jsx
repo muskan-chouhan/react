@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <h1>get input filed value</h1>
-    <input type='text' value={value}onChange={(evnet)=>setValue(event.target.value)}placeholder='Enter user name'></input>
+    <input type='text' value={value} onChange={(evnet)=>setValue(event.target.value)}placeholder='Enter user name'></input>
     <h1>{value}</h1>
 
     <button onClick={()=>setValue("")}>Clear Value</button>
