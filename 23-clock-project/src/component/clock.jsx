@@ -31,3 +31,4 @@ const Clock = ({ color }) => {
 };
 
 export default Clock;
+
