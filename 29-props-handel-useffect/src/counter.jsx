@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 
 const Counter = ({ counter, data }) => {
@@ -10,8 +11,7 @@ useEffect(()=>{
 },[])
 
   function getData(){
-    console.log('call data only');
-    
+    console.log('call data only'); 
   }
   useEffect(()=>{
      getData();

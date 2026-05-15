@@ -10,7 +10,7 @@ function App() {
     <Counter counter = {count} data={data}/>
     <button onClick={()=>setCount(count + 1)}>Counter</button>
      <button onClick={()=>setData(data + 1)}>Data</button>
- <Counter/>
+
     </>
   )
 }
