@@ -6,7 +6,8 @@ function App() {
 
   const handelInput = () => {
     inputRef.current.focus()
-    inputRef.current.style.color = 'red'
+    
+    
     inputRef.current.placeholder = 'Enter password'
     inputRef.current.value = '124'
   }
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <>
+
       <h2>useRef Hook</h2>
 
       <button onClick={handeToggle}>Toggle</button>
