@@ -3,6 +3,7 @@ import { useState } from 'react'
 function App() {
    const [textColor,setTextColor] = useState('black')
    const [grid,setGrid] = useState(false)
+   
   const [cardStyle,setcardStyle] = useState({
     width: "200px",
     border: "1px solid #cccccc3b",
