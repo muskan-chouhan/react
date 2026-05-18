@@ -2,12 +2,11 @@ import { useState, useTransition } from 'react'
 
 function App() {
   const [pending, setTransition] = useTransition()
-const handel = async() => {
+  const handel = async() => {
    setTransition( async ()=>{
     await new Promise(res => setTimeout(res,2000)) 
    })
-   
-      
+       
   } 
   return (
     <>
