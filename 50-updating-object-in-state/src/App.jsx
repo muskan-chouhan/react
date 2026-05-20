@@ -14,6 +14,12 @@ function App() {
    let tempData = data;
    tempData.name=val;
     setData({...tempData})
+   
+  //   ye clean way hai => 
+  //  setData({
+  //   ...data,
+  //   name: val
+  // });
   
   }
   function updateCity(city){
