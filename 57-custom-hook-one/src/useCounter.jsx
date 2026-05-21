@@ -7,6 +7,6 @@ function useCounter (){
    function decrement(){
     setCount(count-1)
   }
-  return[count,increment,decrement]
+  return [count,increment,decrement]
 }
 export default useCounter;
