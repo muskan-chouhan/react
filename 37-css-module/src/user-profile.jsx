@@ -2,8 +2,6 @@ import style from './css/user-profile.module.css'
 
 function UserProfile() {
 
-
-
     return (
         <>
 
