@@ -17,6 +17,7 @@ const Counter = ({ count, data }) => {
       console.log("unmounting phase only");
   }
   }, []);
+  
   return (
     <>
       <h1>Counter Value {count}</h1>
