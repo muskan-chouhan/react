@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styled from 'styled-Components'
+import styled from "styled-components";
 
 function App() {
   // const Heading = styled.h1`
